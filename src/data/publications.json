@@ -1,0 +1,114 @@
+[
+  {
+    "id": "kumar-2026-multicomponent-transport",
+    "title": "A Reformulation of UVN-Flash for Multicomponent Two-Phase Systems with Application to CO₂-Rich Mixture Transport in Pipelines",
+    "authors": [
+      "Pardeep Kumar",
+      "Patricio I. Rosen Esquivel"
+    ],
+    "venue": "Computers & Fluids, 314, 107108",
+    "year": 2026,
+    "type": "Journal article",
+    "status": "Published",
+    "summary": "A coupled thermodynamic and finite-volume framework for transient transport of two-phase CO₂-rich mixtures. The method combines the homogeneous equilibrium model, a Helmholtz-energy equation of state, phase-stability analysis, and a tailored, better-scaled UVN-flash formulation for tank and pipeline depressurization.",
+    "themes": [
+      "co2-transport",
+      "multiphase-flow",
+      "thermodynamics",
+      "phase-equilibrium",
+      "finite-volume"
+    ],
+    "links": {
+      "pdf": "/articles/MulticomponentTransport.pdf",
+      "arxiv": "",
+      "doi": "https://doi.org/10.1016/j.compfluid.2026.107108",
+      "code": ""
+    },
+    "bibtex": "@article{kumar2026multicomponent,\n  author  = {Kumar, Pardeep and Rosen Esquivel, Patricio I.},\n  title   = {A Reformulation of {UVN}-Flash for Multicomponent Two-Phase Systems with Application to {CO2}-Rich Mixture Transport in Pipelines},\n  journal = {Computers \\& Fluids},\n  volume  = {314},\n  pages   = {107108},\n  year    = {2026},\n  doi     = {10.1016/j.compfluid.2026.107108}\n}"
+  },
+  {
+    "id": "kumar-2026-uvn-tvn-space",
+    "title": "Solving the UVN-Flash Problem in TVN-Space",
+    "authors": [
+      "Pardeep Kumar",
+      "Patricio I. Rosen Esquivel"
+    ],
+    "venue": "Fluid Phase Equilibria, 599, 114528",
+    "year": 2026,
+    "type": "Journal article",
+    "status": "Published",
+    "summary": "A reformulation of the multicomponent UVN-flash problem as constrained entropy maximization in temperature-volume-composition space. The formulation eliminates the nested temperature solve used by conventional UVN methods and incorporates stability analysis and stability-derived initialization.",
+    "themes": [
+      "thermodynamics",
+      "uvn-flash",
+      "phase-equilibrium",
+      "phase-stability",
+      "optimization"
+    ],
+    "links": {
+      "pdf": "/articles/UVNFlashInTVNSpace.pdf",
+      "arxiv": "",
+      "doi": "https://doi.org/10.1016/j.fluid.2025.114528",
+      "code": ""
+    },
+    "bibtex": "@article{kumar2026uvn,\n  author  = {Kumar, Pardeep and Rosen Esquivel, Patricio I.},\n  title   = {Solving the {UVN}-Flash Problem in {TVN}-Space},\n  journal = {Fluid Phase Equilibria},\n  volume  = {599},\n  pages   = {114528},\n  year    = {2026},\n  doi     = {10.1016/j.fluid.2025.114528}\n}"
+  },
+  {
+    "id": "kumar-2025-temperature-equation",
+    "title": "A New Temperature Evolution Equation That Enforces Thermodynamic Vapour–Liquid Equilibrium in Multiphase Flows — Application to CO₂ Modelling",
+    "authors": [
+      "Pardeep Kumar",
+      "Benjamin Sanderse",
+      "Patricio I. Rosen Esquivel",
+      "R. A. W. M. Henkes"
+    ],
+    "venue": "Computers & Fluids, 289, 106524",
+    "year": 2025,
+    "type": "Journal article",
+    "status": "Published",
+    "summary": "A thermodynamically consistent framework for pure-CO₂ tank and pipeline depressurization. The conventional four-equation vapour–liquid-equilibrium problem is reduced to a scalar equation, and a temperature evolution equation is derived directly from the UV-flash constraints for integration alongside the flow equations.",
+    "themes": [
+      "co2-transport",
+      "multiphase-flow",
+      "thermodynamics",
+      "vapour-liquid-equilibrium",
+      "finite-volume"
+    ],
+    "links": {
+      "pdf": "/articles/NewTemperatureEquation.pdf",
+      "arxiv": "",
+      "doi": "https://doi.org/10.1016/j.compfluid.2024.106524",
+      "code": ""
+    },
+    "bibtex": "@article{kumar2025temperature,\n  author  = {Kumar, Pardeep and Sanderse, Benjamin and Rosen Esquivel, Patricio I. and Henkes, R. A. W. M.},\n  title   = {A New Temperature Evolution Equation That Enforces Thermodynamic Vapour--Liquid Equilibrium in Multiphase Flows: Application to {CO2} Modelling},\n  journal = {Computers \\& Fluids},\n  volume  = {289},\n  pages   = {106524},\n  year    = {2025},\n  doi     = {10.1016/j.compfluid.2024.106524}\n}"
+  },
+  {
+  "id": "kumar-2024-two-phase-co2-pipes",
+  "title": "Numerical Modelling of Two-Phase CO₂ Flow in Pipes",
+  "authors": [
+    "Pardeep Kumar",
+    "Benjamin Sanderse",
+    "Patricio I. Rosen Esquivel",
+    "R. A. W. M. Henkes"
+  ],
+  "venue": "Proceedings of the 12th North American Conference on Multiphase Production Technology, MPNA 2024, pp. 387–402",
+  "year": 2024,
+  "type": "Conference paper",
+  "status": "Published",
+  "summary": "A numerical study of single- and two-phase CO₂ transport in pipelines using the Homogeneous Equilibrium Model. The method is evaluated on fast transient test cases and compared with established industrial pipeline simulators, including OLGA, LedaFlow, and WANDA.",
+  "themes": [
+    "co2-transport",
+    "multiphase-flow",
+    "hyperbolic-conservation-laws",
+    "finite-volume",
+    "pipeline-simulation"
+  ],
+  "links": {
+    "pdf": "https://onepetro.org/isavftmpna/proceedings-pdf/MPNA24/MPNA24/ISAVFT-2024-387/4241479/isavft-2024-387.pdf",
+    "arxiv": "",
+    "doi": "",
+    "code": ""
+  },
+  "bibtex": "@inproceedings{kumar2024twophaseco2,\n  author    = {Kumar, Pardeep and Sanderse, Benjamin and Rosen Esquivel, Patricio I. and Henkes, R. A. W. M.},\n  title     = {Numerical Modelling of Two-Phase {CO2} Flow in Pipes},\n  booktitle = {Proceedings of the 12th North American Conference on Multiphase Production Technology},\n  series    = {MPNA 2024},\n  pages     = {387--402},\n  year      = {2024},\n  address   = {Banff, Canada},\n  note      = {Paper ISAVFT-2024-387}\n}"
+}
+]

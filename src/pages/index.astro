@@ -1,0 +1,215 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import publications from '../data/publications.json';
+import news from '../data/news.json';
+import { siteConfig } from '../site.config';
+
+const base = import.meta.env.BASE_URL;
+
+const recentPublications = [...publications]
+  .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title))
+  .slice(0, 3);
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: siteConfig.name,
+  jobTitle: 'Researcher in Numerical Methods and Scientific Computing',
+  affiliation: siteConfig.affiliations.map((item) => ({
+    '@type': 'Organization',
+    name: item.name,
+    url: item.href
+  })),
+  email: `mailto:${siteConfig.email}`,
+  sameAs: siteConfig.social
+    .filter((item) => item.href.startsWith('http'))
+    .map((item) => item.href)
+};
+---
+
+<BaseLayout
+  title="Pardeep Kumar"
+  description="Research in thermodynamic phase equilibrium, CO₂-rich multiphase transport, computational electromagnetics, numerical relativity, and scientific computing."
+  className="home-main"
+>
+  <Fragment slot="head">
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(personSchema)}
+    />
+  </Fragment>
+
+  <section class="hero shell">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        Scientific computing · CWI Amsterdam · TU Delft
+      </p>
+
+      <div class="hero-copy">
+      <p class="hero-lede">
+        Welcome to my website. I am a numerical methods researcher and scientific
+        software developer at CWI Amsterdam. I develop robust and efficient
+        computational methods for complex physical systems governed by hyperbolic
+        partial differential equations, often coupled to nonlinear constitutive
+        relations or auxiliary constraints.
+      </p>
+
+      <p class="hero-lede">
+        My research spans phase-equilibrium calculations, transient multiphase
+        transport of multicomponent mixtures, finite-volume methods, computational
+        electromagnetics, numerical relativity, and high-performance scientific
+        computing. A central theme of my work is identifying common mathematical
+        structures across different disciplines and translating them into reliable,
+        efficient, and physically consistent scientific software.
+      </p>
+
+      <p class="hero-lede">
+        I am also interested in AI-assisted scientific computing, particularly its
+        use in software development, verification, technical research, and the
+        communication of complex mathematical ideas. Outside research and
+        programming, I enjoy playing ping-pong and cricket.
+      </p>
+
+      <p class="hero-lede hero-disclaimer">
+        This website contains expository notes related to my research. Some posts
+        describe work already published in peer-reviewed journals, while others
+        explore ongoing ideas that may later be consolidated, revised, and submitted
+        for publication. These posts should therefore be regarded as evolving
+        research expositions rather than final archival versions. Where a
+        peer-reviewed publication is available, the published article should be
+        treated as the authoritative version.
+      </p>
+      </div>
+      <SocialLinks />
+    </div>
+
+    <figure class="profile-figure">
+      <img
+        src={`${base}images/me1.jpg`}
+        width="640"
+        height="450"
+        alt="Portrait of Pardeep Kumar"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </figure>
+  </section>
+
+  <section class="section-block tinted-section">
+    <div class="shell split-heading">
+      <div>
+        <p class="eyebrow">Research areas</p>
+        <h2>From mathematical formulation to scientific software</h2>
+      </div>
+
+      <p>
+        I study how the formulation of constrained governing equations, the choice of numerical variables, and the design of discretisation methods influence the robustness, accuracy, and efficiency of physical simulations. I also use AI-assisted tools and prompt engineering to support scientific software development, verification, research workflows, and the communication of complex technical ideas, while keeping the underlying mathematics and physics explicit.
+      </p>
+    </div>
+
+    <div class="shell theme-grid">
+      <a
+        class="theme-card"
+        href={`${base}research/#multiphase-thermodynamics`}
+      >
+        <span>01</span>
+        <h3>Multiphase thermodynamics</h3>
+        <p>
+          Stability analysis and UVN-flash formulations for multicomponent
+          phase-equilibrium calculations.
+        </p>
+      </a>
+
+      <a class="theme-card" href={`${base}research/#co2-transport`}>
+        <span>02</span>
+        <h3>CO₂-rich multiphase transport</h3>
+        <p>
+          Coupled thermodynamic and finite-volume models for transient tank
+          and pipeline simulations.
+        </p>
+      </a>
+
+      <a
+        class="theme-card"
+        href={`${base}research/#computational-electromagnetics`}
+      >
+        <span>03</span>
+        <h3>Computational electromagnetics</h3>
+        <p>
+          Finite-volume time-domain methods for electromagnetic propagation,
+          interfaces, and scattering.
+        </p>
+      </a>
+
+      <a
+        class="theme-card"
+        href={`${base}research/#numerical-relativity`}
+      >
+        <span>04</span>
+        <h3>Numerical relativity</h3>
+        <p>
+          BSSN, CCZ4, and FO-CCZ4 formulations for constrained evolution
+          systems in general relativity.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-block shell">
+    <div class="section-heading-row">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2>Recent publications</h2>
+      </div>
+
+      <a class="text-link" href={`${base}publications/`}>
+        All publications →
+      </a>
+    </div>
+
+    <div class="publication-list home-publications">
+      {recentPublications.map((publication) => (
+        <PublicationCard publication={publication} concise />
+      ))}
+    </div>
+  </section>
+
+  <section class="section-block tinted-section">
+    <div class="shell news-layout">
+      <div>
+        <p class="eyebrow">Updates</p>
+        <h2>News</h2>
+      </div>
+
+      <ol class="news-list">
+        {news.map((item) => (
+          <li>
+            <time datetime={item.date}>{item.date}</time>
+            <p>{item.text}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-block shell contact-band">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Research collaboration and scientific computing</h2>
+    </div>
+
+    <div>
+      <p>
+        I welcome discussions about thermodynamics, multiphase flow,
+        computational physics, numerical methods, scientific software and web development.
+      </p>
+
+      <a class="button-link" href={`mailto:${siteConfig.email}`}>
+        Email me
+      </a>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationCard from '../components/PublicationCard.astro';
+import publications from '../data/publications.json';
+
+const sortedPublications = [...publications].sort(
+  (a, b) => b.year - a.year || a.title.localeCompare(b.title)
+);
+
+const years = [
+  ...new Set(sortedPublications.map((publication) => publication.year))
+];
+---
+
+<BaseLayout
+  title="Publications"
+  description="Publications by Pardeep Kumar on thermodynamic phase equilibrium, CO₂-rich multiphase transport, and numerical methods for transient flow simulation."
+  className="page-main"
+>
+  <div class="shell">
+    <header class="page-heading">
+      <p class="eyebrow">Research output</p>
+
+      <h1>Publications</h1>
+
+      <p class="lede">
+        Peer-reviewed work on thermodynamic phase equilibrium, UVN-flash
+        calculations, and the numerical simulation of CO₂-rich multiphase
+        transport. Use “Cite” on an entry to display its BibTeX record.
+      </p>
+    </header>
+
+    {years.map((year) => (
+      <section
+        class="publication-year-group"
+        aria-labelledby={`year-${year}`}
+      >
+        <h2 id={`year-${year}`}>{year}</h2>
+
+        <div class="publication-list">
+          {sortedPublications
+            .filter((publication) => publication.year === year)
+            .map((publication) => (
+              <PublicationCard publication={publication} />
+            ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</BaseLayout>

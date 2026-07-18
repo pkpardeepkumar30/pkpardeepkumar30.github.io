@@ -1,0 +1,16 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { title, description } = Astro.props.frontmatter;
+---
+
+<BaseLayout title={title} description={description} className="page-main">
+  <article class="shell prose page-prose">
+    <header class="page-heading">
+      <p class="eyebrow"></p>
+      <h1>{title}</h1>
+      {description && <p class="lede">{description}</p>}
+    </header>
+    <slot />
+  </article>
+</BaseLayout>

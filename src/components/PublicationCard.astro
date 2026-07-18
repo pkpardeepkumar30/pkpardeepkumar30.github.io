@@ -1,0 +1,71 @@
+---
+interface PublicationLinks {
+  pdf?: string;
+  arxiv?: string;
+  doi?: string;
+  code?: string;
+}
+
+interface Publication {
+  id: string;
+  title: string;
+  authors: string[];
+  venue: string;
+  year: number;
+  type: string;
+  status?: string;
+  summary?: string;
+  links: PublicationLinks;
+  bibtex: string;
+}
+
+interface Props {
+  publication: Publication;
+  concise?: boolean;
+}
+
+const { publication, concise = false } = Astro.props;
+const linkLabels: Record<keyof PublicationLinks, string> = {
+  pdf: 'PDF',
+  arxiv: 'arXiv',
+  doi: 'DOI',
+  code: 'Code'
+};
+const activeLinks = Object.entries(publication.links).filter(([, href]) => href);
+---
+
+<article class:list={['publication-card', { concise }]} id={publication.id}>
+  <div class="publication-year" aria-label={`Published in ${publication.year}`}>
+    {publication.year}
+  </div>
+  <div>
+    <p class="eyebrow">{publication.type}{publication.status ? ` · ${publication.status}` : ''}</p>
+    <h2>{publication.title}</h2>
+    <p class="authors">
+      {publication.authors.map((author, index) => (
+        <>
+          {author === 'Pardeep Kumar' ? <strong>{author}</strong> : author}
+          {index < publication.authors.length - 1 ? ', ' : ''}
+        </>
+      ))}
+    </p>
+    <p class="venue">{publication.venue}</p>
+    {!concise && publication.summary && <p class="publication-summary">{publication.summary}</p>}
+
+    {!concise && (
+      <div class="publication-actions">
+        {activeLinks.map(([kind, href]) => (
+          <a class="text-link" href={href} target="_blank" rel="noreferrer">
+            {linkLabels[kind as keyof PublicationLinks]} ↗
+          </a>
+        ))}
+        <details class="citation">
+          <summary>Cite</summary>
+          <div class="citation-body">
+            <pre><code>{publication.bibtex}</code></pre>
+          </div>
+        </details>
+      </div>
+    )}
+  </div>
+</article>

@@ -1,0 +1,24 @@
+---
+import { siteConfig } from '../site.config';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+const links = siteConfig.social.filter((item) => item.href);
+---
+
+<ul class:list={['social-links', { compact }]} aria-label="Contact and academic profiles">
+  {links.map((item) => (
+    <li>
+      <a
+        href={item.href}
+        target={item.href.startsWith('http') ? '_blank' : undefined}
+        rel={item.href.startsWith('http') ? 'me noreferrer' : undefined}
+      >
+        {item.label}<span class="external-mark" aria-hidden="true">↗</span>
+      </a>
+    </li>
+  ))}
+</ul>

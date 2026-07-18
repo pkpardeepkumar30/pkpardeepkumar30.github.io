@@ -1,0 +1,54 @@
+---
+import { siteConfig } from '../site.config';
+
+const base = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
+const currentPath = Astro.url.pathname.startsWith(base)
+  ? `/${Astro.url.pathname.slice(base.length)}`
+  : Astro.url.pathname;
+const navigation = siteConfig.navigation.filter((item) => item.enabled);
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href={withBase('')} aria-label={`${siteConfig.name}, home`}>
+      <span class="wordmark-mark" aria-hidden="true">{siteConfig.shortName}</span>
+      <span>{siteConfig.name}</span>
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        {navigation.map((item) => {
+          const itemPath = item.href ? `/${item.href}` : '/';
+          const isActive = item.href
+            ? currentPath.startsWith(itemPath)
+            : currentPath === '/' || currentPath === '//';
+          return (
+            <li>
+              <a href={withBase(item.href)} aria-current={isActive ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+      <span class="theme-icon" aria-hidden="true">◐</span>
+    </button>
+  </div>
+</header>
+
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  const root = document.documentElement;
+
+  button?.addEventListener('click', () => {
+    const current = root.dataset.theme
+      ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+</script>

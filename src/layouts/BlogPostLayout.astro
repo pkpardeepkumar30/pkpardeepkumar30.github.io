@@ -1,0 +1,30 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { title, description, published, updated, tags = [] } = Astro.props;
+const dateFormatter = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+---
+
+<BaseLayout title={title} description={description} article className="page-main">
+  <article class="shell prose page-prose blog-post">
+    <header class="page-heading">
+      <p class="eyebrow">Research notes</p>
+      <h1>{title}</h1>
+      <p class="lede">{description}</p>
+      <p class="post-meta">
+        Published <time datetime={published.toISOString()}>{dateFormatter.format(published)}</time>
+        {updated && <> · Updated <time datetime={updated.toISOString()}>{dateFormatter.format(updated)}</time></>}
+      </p>
+      {tags.length > 0 && (
+        <ul class="tag-list" aria-label="Tags">
+          {tags.map((tag: string) => <li>{tag}</li>)}
+        </ul>
+      )}
+    </header>
+    <slot />
+  </article>
+</BaseLayout>

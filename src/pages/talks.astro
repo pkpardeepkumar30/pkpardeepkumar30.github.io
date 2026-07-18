@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import talks from '../data/talks.json';
+
+const sortedTalks = [...talks].sort((a, b) => b.date.localeCompare(a.date));
+
+const dateFormatter = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC'
+});
+---
+
+<BaseLayout
+  title="Talks"
+  description="Conference talks and research presentations by Pardeep Kumar on hyperbolic problems, multiphase flow, thermodynamics, and scientific computing."
+  className="page-main"
+>
+  <div class="shell">
+    <header class="page-heading">
+      <p class="eyebrow">Presentations</p>
+      <h1>Talks</h1>
+      <p class="lede">
+        Conference presentations and research talks on hyperbolic problems,
+        multiphase flow, thermodynamics, and numerical methods.
+      </p>
+    </header>
+
+    <ol class="talk-list">
+      {sortedTalks.map((talk) => (
+        <li id={talk.id}>
+          <time datetime={talk.date}>
+            {dateFormatter.format(new Date(`${talk.date}T00:00:00Z`))}
+          </time>
+
+          <div>
+            <p class="eyebrow">{talk.kind}</p>
+            <h2>{talk.title}</h2>
+
+            {talk.authors?.length > 1 && (
+              <p class="talk-authors">{talk.authors.join(', ')}</p>
+            )}
+
+            <p>
+              {talk.event} · {talk.location}
+            </p>
+
+            {talk.session && (
+              <p class="talk-details">
+                {talk.session}
+                {talk.time && ` · ${talk.time}`}
+              </p>
+            )}
+
+            <div class="talk-links">
+              {talk.links?.slides && (
+                <a href={talk.links.slides}>Slides ↗</a>
+              )}
+
+              {talk.links?.abstract && (
+                <a href={talk.links.abstract}>Abstract ↗</a>
+              )}
+
+              {talk.links?.video && (
+                <a href={talk.links.video}>Video ↗</a>
+              )}
+            </div>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</BaseLayout>
