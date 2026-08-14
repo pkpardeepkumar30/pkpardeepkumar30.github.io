@@ -1,0 +1,44 @@
+---
+interface Project {
+  id: string;
+  number: string;
+  title: string;
+  category: string;
+  description: string;
+  details: string;
+  stack: string[];
+  live: string;
+  source: string;
+}
+
+interface Props {
+  project: Project;
+  detailed?: boolean;
+}
+
+const { project, detailed = false } = Astro.props;
+---
+
+<article class:list={['project-card', { detailed }]} id={project.id}>
+  <div class="project-card-topline">
+    <span>{project.number}</span>
+    <p>{project.category}</p>
+  </div>
+
+  <div class="project-card-body">
+    <h2>{project.title}</h2>
+    <p>{project.description}</p>
+    {detailed && <p class="project-details">{project.details}</p>}
+  </div>
+
+  <ul class="project-stack" aria-label={`${project.title} technologies`}>
+    {project.stack.map((technology) => <li>{technology}</li>)}
+  </ul>
+
+  <div class="project-links">
+    {project.live && (
+      <a href={project.live} target="_blank" rel="noreferrer">Visit website ↗</a>
+    )}
+    <a href={project.source} target="_blank" rel="noreferrer">View source ↗</a>
+  </div>
+</article>

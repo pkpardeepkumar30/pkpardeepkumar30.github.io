@@ -1,0 +1,46 @@
+[
+  {
+    "id": "the-republic",
+    "number": "01",
+    "title": "The Republic",
+    "category": "Civic strategy simulation",
+    "description": "A data-driven civic strategy game in which players navigate institutions, public pressure, limited resources, and uncertain outcomes across multiple social scenarios.",
+    "details": "I built a Rust server with Axum and Tokio, a responsive Phaser 3 web client, persistent campaigns, and validated JSON/YAML scenario packs so new environments can be added without changing the engine.",
+    "stack": ["Rust", "Axum", "Tokio", "Phaser 3", "PWA", "Docker"],
+    "live": "https://democracy-game-236938724273.europe-west1.run.app/",
+    "source": "https://github.com/pkpardeepkumar30/Democracy-Simulator"
+  },
+  {
+    "id": "nazar-india",
+    "number": "02",
+    "title": "Nazar India",
+    "category": "Source-transparent news platform",
+    "description": "An Indian news aggregator designed to keep original sources, evidence status, disagreements, and editorial confidence visible to the reader.",
+    "details": "The dependency-free publishing pipeline collects public RSS feeds, uses structured AI-assisted editorial distillation, validates every output, and republishes a searchable static archive through scheduled automation.",
+    "stack": ["Python", "HTML", "CSS", "OpenAI API", "GitHub Actions", "Cloudflare"],
+    "live": "https://nazar-india.pages.dev/",
+    "source": "https://github.com/pkpardeepkumar30/news"
+  },
+  {
+    "id": "chess-duel",
+    "number": "03",
+    "title": "Chess Duel",
+    "category": "Real-time multiplayer game",
+    "description": "A private-room chess application for two players, with instant guest play and optional verified accounts for persistent cross-device game history.",
+    "details": "It combines responsive move interaction with server-authoritative rule validation, transaction-safe real-time synchronization, complete draw conditions, reconnect handling, and durable Appwrite records.",
+    "stack": ["Next.js", "React", "TypeScript", "Appwrite", "Realtime"],
+    "live": "",
+    "source": "https://github.com/pkpardeepkumar30/chess"
+  },
+  {
+    "id": "workatlas",
+    "number": "04",
+    "title": "WorkAtlas",
+    "category": "Project and knowledge workspace",
+    "description": "A multi-user workspace for organizing research, software projects, publications, experiments, tasks, and long-term ideas in one structured system.",
+    "details": "I designed its configuration-driven public pages and database-backed application, including authentication, owner-scoped data, task and Kanban workflows, portable exports, documentation, and production deployment.",
+    "stack": ["Next.js", "React", "TypeScript", "PostgreSQL", "Drizzle", "Vercel"],
+    "live": "https://workatlas-kappa.vercel.app/",
+    "source": "https://github.com/pkpardeepkumar30/workatlas"
+  }
+]

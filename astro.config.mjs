@@ -13,7 +13,7 @@ const inferredBase = owner && repository && !isUserSite ? `/${repository}` : '/'
 
 export default defineConfig({
   output: 'static',
-  site: 'https://pkpardeepkumar30.github.io',
+  site: process.env.SITE_URL ?? inferredSite,
   base: process.env.SITE_BASE ?? inferredBase,
   trailingSlash: 'always',
   integrations: [sitemap()],

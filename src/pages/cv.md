@@ -1,10 +1,8 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
-# title: Curriculum Vitae
-# description: Curriculum vitae of Pardeep Kumar, software developer working across web applications, scientific computing, and engineering software.
+title: Curriculum Vitae
+description: Curriculum vitae of Pardeep Kumar, spanning web applications, scientific computing, and engineering software.
 ---
-
-# Curriculum Vitae
 
 **Software Developer — Web Applications and Scientific Computing**  
 Amsterdam, the Netherlands  
@@ -20,16 +18,43 @@ I use AI-assisted development and prompt engineering to accelerate code explorat
 
 I am open to software engineering, full-stack web development, scientific software, high-performance computing, and AI-assisted development roles.
 
-## Live website
+## Selected web applications
 
-### WorkAtlas - project and task management application
+### The Republic - civic strategy simulation
 
-[Open WorkAtlas](https://workatlas-kappa.vercel.app/)
+[Open The Republic](https://democracy-game-236938724273.europe-west1.run.app/) · [Source code](https://github.com/pkpardeepkumar30/Democracy-Simulator)
 
-- Designed and developed a multi-user application for organising projects and tasks.
+- Designed a data-driven civic strategy game with stochastic outcomes, limited resources, institutions, stakeholders, and state-gated player actions.
+- Built a low-latency Rust server using Axum and Tokio, with persistent sessions and idempotent action handling.
+- Developed a responsive Phaser 3 browser client and installable PWA, with an SVG/DOM fallback and mobile-ready interaction.
+- Created validated JSON/YAML scenario packs and a reusable registry so new civic environments can be added without changing the game engine.
+
+### Nazar India - source-transparent news platform
+
+[Open Nazar India](https://nazar-india.pages.dev/) · [Source code](https://github.com/pkpardeepkumar30/news)
+
+- Built a dependency-free Indian news aggregator that keeps original sources, evidence status, disagreements, and confidence rationale visible.
+- Developed a Python pipeline for public RSS collection, structured AI-assisted editorial distillation, validation, archiving, and static publishing.
+- Added search, source and category filters, permanent story pages, structured metadata, sitemap generation, and a source-methodology view.
+- Automated four-hour collection and publication workflows with GitHub Actions and deployed the public site through Cloudflare.
+
+### Chess Duel - real-time multiplayer chess
+
+[Source code](https://github.com/pkpardeepkumar30/chess)
+
+- Developed a private-room chess application with instant guest play and optional verified-email accounts.
+- Implemented server-authoritative move validation and transaction-safe real-time synchronization using Next.js, TypeScript, and Appwrite.
+- Covered the complete ruleset, including castling, en passant, promotion, checkmate, stalemate, repetition, the fifty-move rule, and insufficient material.
+- Added reconnect handling, move history, recent games, responsive board orientation, and persistent cross-device records for registered players.
+
+### WorkAtlas - project and knowledge workspace
+
+[Open WorkAtlas](https://workatlas-kappa.vercel.app/) · [Source code](https://github.com/pkpardeepkumar30/workatlas)
+
+- Designed and developed a multi-user workspace for research, software, publications, experiments, projects, and tasks.
 - Built the full-stack application using Next.js, React, TypeScript, PostgreSQL, and Drizzle ORM.
-- Implemented authentication and persistent, database-backed user data.
-- Deployed the application using Vercel and Neon.
+- Implemented authentication, owner-scoped database access, project and Kanban workflows, comments, reminders, documentation, and portable data exports.
+- Created a configuration-driven content system and deployed the application with Vercel and Neon PostgreSQL.
 
 ## Web-development expertise
 

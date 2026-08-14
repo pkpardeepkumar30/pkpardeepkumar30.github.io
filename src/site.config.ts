@@ -12,6 +12,7 @@ export const siteConfig = {
   ],
   navigation: [
     { label: 'Home', href: '', enabled: true },
+    { label: 'Projects', href: 'projects/', enabled: true },
     { label: 'Research', href: 'research/', enabled: true },
     { label: 'Publications', href: 'publications/', enabled: true },
     { label: 'CV', href: 'cv/', enabled: true },

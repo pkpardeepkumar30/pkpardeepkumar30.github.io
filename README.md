@@ -30,6 +30,7 @@ npm run preview
 | What | File |
 | --- | --- |
 | Name, email, profiles, navigation | `src/site.config.ts` |
+| Web projects | `src/data/projects.json` |
 | Publications | `src/data/publications.json` |
 | News on the home page | `src/data/news.json` |
 | Research text | `src/pages/research.md` |
@@ -73,6 +74,12 @@ Example:
 ```
 
 The Publications page and the “Recent publications” section on the home page update automatically. To link a research theme to the paper, use `../publications/#your-paper-id` in `src/pages/research.md`.
+
+## Add or update a web project
+
+Edit `src/data/projects.json`. Each entry controls the project cards on the home page and the full Projects page. Use an empty `live` value when a project does not yet have a public deployment; the live-site link will be hidden automatically. Keep `source` pointed at the public repository.
+
+The longer project descriptions in the Markdown CV live in `src/pages/cv.md`, where they can be tailored for job applications.
 
 ## Add a new talk
 
