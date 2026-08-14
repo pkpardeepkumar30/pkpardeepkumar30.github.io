@@ -477,6 +477,51 @@ pre code {
   background: var(--surface-raised);
 }
 
+.about-home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2.5rem, 9vw, 9rem);
+}
+
+.about-home h2 {
+  max-width: 15ch;
+  margin: 0;
+  font-size: clamp(2.1rem, 4.5vw, 3.7rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
+}
+
+.about-home-copy > p {
+  max-width: 44rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.about-home-copy > p + p {
+  margin-top: 1.15rem;
+}
+
+.about-interest-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 0;
+  padding: 0;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.about-interest-list li {
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent-strong);
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1161,6 +1206,7 @@ pre code {
   .split-heading,
   .news-layout,
   .contact-band,
+  .about-home-grid,
   .research-intro,
   .off-clock-grid {
     grid-template-columns: 1fr;
