@@ -4,7 +4,7 @@ title: Software Engineering
 description: Scientific software, simulation, high-performance computing, and engineering experience of Pardeep Kumar.
 ---
 
-**Scientific Software Engineer | C++ | Python | Julia | High-Performance Computing**<br>
+**Scientific Software Engineer | C++ | C# | Python | Julia**<br>
 Amsterdam, the Netherlands<br>
 [Download software résumé](../cv/Resume_Pardeep_Kumar_Software.pdf) · [Email](mailto:pardeep.iitb@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pkpardeepkumar30/) · [GitHub](https://github.com/pkpardeepkumar30)
 
