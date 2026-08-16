@@ -127,6 +127,13 @@ BULLET = ParagraphStyle(
     bulletIndent=0,
     spaceAfter=0.9 * mm,
 )
+EXPERIENCE_BULLET = ParagraphStyle(
+    "ExperienceBullet",
+    parent=BULLET,
+    fontSize=7.35,
+    leading=9.45,
+    spaceAfter=0.3 * mm,
+)
 ENTRY_TITLE = ParagraphStyle(
     "EntryTitle",
     parent=BODY,
@@ -200,8 +207,8 @@ def entry(title, organisation, dates, bullets):
         )
     )
     parts = [heading, p(organisation, ENTRY_META)]
-    parts.extend(bullet(item) for item in bullets)
-    parts.append(Spacer(1, 1.1 * mm))
+    parts.extend(bullet(item, EXPERIENCE_BULLET) for item in bullets)
+    parts.append(Spacer(1, 0.55 * mm))
     return KeepTogether(parts)
 
 
@@ -302,14 +309,19 @@ def build():
         p(
             'Amsterdam, the Netherlands  |  +31 6 1311 9813  |  '
             '<link href="mailto:pardeep.iitb@gmail.com" color="#006D68">pardeep.iitb@gmail.com</link>  |  '
-            '<link href="https://pkpardeepkumar30.github.io/" color="#006D68">pkpardeepkumar30.github.io</link><br/>'
+            '<link href="https://pkpardeepkumar30.github.io/" color="#006D68">Portfolio</link><br/>'
             '<link href="https://www.linkedin.com/in/pkpardeepkumar30/" color="#006D68">LinkedIn</link>  |  '
-            '<link href="https://scholar.google.com/citations?hl=en&amp;user=th4w0rYAAAAJ" color="#006D68">Google Scholar</link>',
+            '<link href="https://scholar.google.com/citations?hl=en&amp;user=th4w0rYAAAAJ" color="#006D68">Google Scholar</link>  |  '
+            'Languages: English, Hindi, Dutch (A2)',
             CONTACT,
         ),
         section("Profile"),
         p(
-            "Scientific computing researcher with a submitted doctoral thesis from Delft University of Technology and more than ten years of experience in numerical modelling, simulation software, and computational problem-solving. My research at CWI Amsterdam concerns robust numerical methods for multiphase thermodynamics and CO2-rich transport.",
+            'Scientific computing researcher with a submitted doctoral thesis developed at '
+            '<link href="https://www.cwi.nl/en/" color="#006D68"><b>CWI Amsterdam</b></link> and '
+            '<link href="https://www.tudelft.nl/en/me/about/departments/process-energy" color="#006D68"><b>TU Delft</b></link>, '
+            'and more than ten years of experience in numerical modelling, simulation software, and computational problem-solving. '
+            'My research concerns robust numerical methods for multiphase thermodynamics and CO2-rich transport.',
         ),
         p(
             "I am now exploring a serious transition toward high-school education. Teaching brings together the parts of research I value most: asking careful questions, making difficult ideas understandable, and helping someone gain the confidence to reason independently. I would bring broad examples, patient explanation, and an honest learning mindset to mathematics, physics, and computing education.",
@@ -318,7 +330,8 @@ def build():
         section("Education"),
         education_entry(
             "PhD in Mechanical Engineering",
-            "Delft University of Technology | Research conducted at CWI Amsterdam",
+            '<link href="https://www.tudelft.nl/en/me/about/departments/process-energy" color="#53615E">Delft University of Technology</link> | '
+            '<link href="https://www.cwi.nl/en/" color="#53615E">Research conducted at CWI Amsterdam</link>',
             "2022-2026",
             "Thesis submitted; defence planned for January 2027. Research focus: numerical methods for transient multiphase flow of multicomponent mixtures, with industrial collaboration from Shell Projects &amp; Technology.",
         ),
@@ -342,7 +355,7 @@ def build():
                     p("<b>Interdisciplinary perspective</b><br/>Examples drawn from aerospace, energy, fluids, electromagnetics, semiconductors, finance, and computing.", SMALL),
                 ],
                 [
-                    p("<b>Evidence and verification</b><br/>A research habit of checking units, assumptions, limiting cases, numerical results, and alternative explanations.", SMALL),
+                    p("<b>Evidence and verification</b><br/>A research habit of examining assumptions, limiting cases, numerical results, and alternative explanations.", SMALL),
                     p("<b>Computational demonstrations</b><br/>Able to create small programs and visual models that let students investigate a mathematical or physical question.", SMALL),
                 ],
             ],
@@ -358,6 +371,11 @@ def build():
                     ("BOTTOMPADDING", (0, 0), (-1, -1), 1.5 * mm),
                 ]
             ),
+        ),
+        section("Selected professional development at TU Delft"),
+        p(
+            "Graduate School courses: Scientific Storytelling; Advanced Problem Solving and Decision Making; Teamwork, Leadership and Group Dynamics; Conversation Skills; Embedding Societal Values in Research; and Scientific Integrity.",
+            SMALL,
         ),
         PageBreak(),
         p("Pardeep Kumar", NAME),
@@ -399,7 +417,7 @@ def build():
             entry(
                 "PhD Researcher in Scientific Computing",
                 "Centrum Wiskunde &amp; Informatica (CWI), Amsterdam",
-                "Aug 2022-present",
+                "Aug 2022-Aug 14, 2026",
                 [
                     "Developed numerical formulations and software for multicomponent, multiphase thermodynamics and transient flow.",
                     "Connected mathematical analysis, physical modelling, algorithm design, implementation, and validation in interdisciplinary research.",
@@ -415,7 +433,7 @@ def build():
             ),
             entry(
                 "Software Engineer",
-                "Shell, Amsterdam",
+                "Shell, Amsterdam | Individual contributor",
                 "Jun 2019-Dec 2021",
                 [
                     "Migrated numerical workflows from Python to C++ and CUDA, reducing a representative runtime from about 30 minutes to 15 seconds.",
@@ -423,12 +441,39 @@ def build():
                 ],
             ),
             entry(
-                "Earlier engineering roles",
-                "Aakraya Research, KLA-Tencor, Altair, and Fluidyn",
-                "Jul 2014-Apr 2019",
+                "Software Engineer",
+                "Aakraya Research, Bangalore | Team of 2",
+                "Feb-Apr 2019",
                 [
-                    "Worked on trading infrastructure, semiconductor simulation, geometry and mesh tools, engineering software architecture, and computational physics.",
-                    "Developed a parallel finite-volume electromagnetic solver, higher-order schemes, shared-memory infrastructure, and scientific testing tools.",
+                    "Developed regression-model generation and live profit-and-loss evaluation tools for high-frequency trading.",
+                    "Improved C++ order-book infrastructure for efficient order matching.",
+                ],
+            ),
+            entry(
+                "Software Engineer II",
+                "KLA-Tencor, Chennai | Team of 2",
+                "May-Nov 2018",
+                [
+                    "Developed cross-application infrastructure and a silica-wafer thickness simulation engine using C#, F#, and MATLAB.",
+                    "Implemented reusable testing libraries and an Erlang fault-tolerance mechanism with failover and recovery.",
+                ],
+            ),
+            entry(
+                "Software Engineer",
+                "Altair, Bangalore | Team of 6",
+                "Mar 2016-Apr 2018",
+                [
+                    "Developed shared-memory infrastructure and geometry and mesh-manipulation tools in C++.",
+                    "Modernised C++/Python bindings, built Python testing frameworks, and contributed to an MVC refactoring.",
+                ],
+            ),
+            entry(
+                "Research and Development Engineer",
+                "Fluidyn, Bangalore | Team of 4",
+                "Jul 2014-Mar 2016",
+                [
+                    "Developed an MPI-parallel finite-volume electromagnetic solver with higher-order spatial schemes.",
+                    "Implemented near-to-far-field transformations and extended a Navier-Stokes solver for aeroacoustic prediction.",
                 ],
             ),
             section("Selected peer-reviewed publications"),
@@ -471,8 +516,6 @@ def build():
     story.extend(
         [
             web_box,
-            section("Languages"),
-            p("English: proficient  |  Hindi: proficient  |  Dutch: A2", SMALL),
         ]
     )
 

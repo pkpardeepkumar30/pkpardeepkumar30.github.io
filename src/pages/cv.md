@@ -10,7 +10,7 @@ Amsterdam, the Netherlands<br>
 
 ## Profile
 
-Scientific computing researcher with a submitted doctoral thesis from Delft University of Technology and more than ten years of experience in numerical modelling, simulation software, and computational problem-solving. My research at CWI Amsterdam concerns robust numerical methods for multiphase thermodynamics and CO₂-rich transport.
+Scientific computing researcher with a submitted doctoral thesis developed at [CWI Amsterdam](https://www.cwi.nl/en/) and [TU Delft](https://www.tudelft.nl/en/me/about/departments/process-energy), and more than ten years of experience in numerical modelling, simulation software, and computational problem-solving. My research concerns robust numerical methods for multiphase thermodynamics and CO₂-rich transport.
 
 I am now exploring a deliberate move toward high-school education. Teaching appeals to me because it combines the parts of research I value most: asking careful questions, making difficult ideas understandable, and helping someone develop the confidence to reason independently. I am particularly interested in teaching mathematics, physics, and computational thinking.
 
@@ -26,10 +26,21 @@ I bring broad experience across academic research, energy, semiconductors, autom
 
 This is an emerging teaching practice, not a claim of prior school-teaching experience. My aim is to bring the patience, intellectual honesty, and explanatory habits developed through interdisciplinary research into the classroom.
 
+### Selected professional development at TU Delft
+
+I completed Graduate School courses that strengthen the communication, judgement, and collaborative skills relevant to both research and education:
+
+- Scientific Storytelling;
+- Advanced Problem Solving and Decision Making;
+- Teamwork, Leadership and Group Dynamics;
+- Conversation Skills;
+- Embedding Societal Values in Research;
+- Scientific Integrity.
+
 ## Education
 
 ### PhD in Mechanical Engineering
-**Delft University of Technology, the Netherlands**<br>
+**[Delft University of Technology](https://www.tudelft.nl/en/me/about/departments/process-energy), the Netherlands**<br>
 2022–2026
 
 - Doctoral thesis submitted; defence planned for January 2027.
@@ -66,8 +77,8 @@ Selected contributions include:
 ## Professional experience
 
 ### PhD Researcher in Scientific Computing  
-**Centrum Wiskunde & Informatica (CWI), Amsterdam**  
-August 2022–present
+**[Centrum Wiskunde & Informatica (CWI)](https://www.cwi.nl/en/), Amsterdam**<br>
+August 2022–14 August 2026
 
 - Developed numerical formulations and software for multicomponent, multiphase thermodynamics and transient flow.
 - Connected mathematical analysis, physical modelling, algorithm design, implementation, and validation in an interdisciplinary research setting.
@@ -84,17 +95,44 @@ February 2022–August 2022
 **Shell, Amsterdam, the Netherlands**  
 June 2019–December 2021
 
+- Worked as an individual contributor on performance-critical scientific and engineering software.
 - Migrated numerical workflows from Python to C++ and CUDA, reducing a representative runtime from approximately 30 minutes to 15 seconds.
 - Developed concurrent data infrastructure and interoperability layers for real-time process and pipeline simulation software.
 - Built modular scientific visualisation for an in-house dynamic multiphase-flow simulator.
 
-### Earlier engineering roles
-**Aakraya Research, KLA-Tencor, Altair, and Fluidyn**<br>
-July 2014–April 2019
+### Software Engineer
+**Aakraya Research, Bangalore, India — team of 2**<br>
+February 2019–April 2019
 
-- Worked on high-frequency trading infrastructure, semiconductor simulation, engineering software architecture, geometry and mesh tools, and computational physics.
-- Developed a parallel finite-volume time-domain electromagnetic solver and higher-order spatial discretisation methods at Fluidyn.
-- Built shared-memory and testing infrastructure and modernised C++/Python integrations at Altair.
+- Developed offline regression-model generation from historical market data for high-frequency trading.
+- Built tools for evaluating live-trading performance through profit-and-loss metrics.
+- Improved C++ order-book infrastructure for efficient order matching.
+
+### Software Engineer II
+**KLA-Tencor, Chennai, India — team of 2**<br>
+May 2018–November 2018
+
+- Developed cross-application server infrastructure using C# and F#.
+- Designed a silica-wafer thickness simulation engine using C#, F#, and MATLAB.
+- Implemented reusable libraries, testing infrastructure, and an Erlang-based fault-tolerance mechanism.
+
+### Software Engineer
+**Altair, Bangalore, India — team of 6**<br>
+March 2016–April 2018
+
+- Developed shared-memory infrastructure for high-volume interprocess data transfer in C++.
+- Implemented geometry and mesh-manipulation tools for HyperMesh.
+- Modernised C++/Python bindings and created Python testing frameworks for C++ components.
+- Helped refactor engineering software toward a model-view-controller architecture.
+
+### Research and Development Engineer
+**Fluidyn, Bangalore, India — team of 4**<br>
+July 2014–March 2016
+
+- Developed a finite-volume time-domain electromagnetic solver in C++ with MPI parallelisation.
+- Implemented second- and third-order spatial discretisation methods.
+- Developed near-to-far-field transformations for radar-cross-section prediction.
+- Extended a Navier-Stokes solver for far-field aeroacoustic prediction.
 
 ## Peer-reviewed publications
 
