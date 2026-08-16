@@ -24,6 +24,37 @@ const fullTitle = title === siteConfig.title ? title : `${title} | ${siteConfig.
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const base = import.meta.env.BASE_URL;
 const imageURL = new URL(`${base}${image.replace(/^\/+/, '')}`, Astro.site);
+const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+const profileURL = new URL(`${base}images/profile.jpg`, Astro.site);
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${Astro.site}#website`,
+      url: Astro.site,
+      name: siteConfig.name,
+      description: siteConfig.description,
+      inLanguage: 'en'
+    },
+    {
+      '@type': 'Person',
+      '@id': `${Astro.site}#person`,
+      name: siteConfig.name,
+      url: Astro.site,
+      image: profileURL,
+      jobTitle: 'Researcher and scientific software developer',
+      affiliation: siteConfig.affiliations.map(({ name, href }) => ({
+        '@type': 'Organization',
+        name,
+        url: href
+      })),
+      sameAs: siteConfig.social
+        .filter(({ href }) => href.startsWith('https://'))
+        .map(({ href }) => href)
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -33,6 +64,8 @@ const imageURL = new URL(`${base}${image.replace(/^\/+/, '')}`, Astro.site);
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     <meta name="theme-color" content="#f7f5ef" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#101513" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href={canonicalURL} />
@@ -49,6 +82,7 @@ const imageURL = new URL(`${base}${image.replace(/^\/+/, '')}`, Astro.site);
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageURL} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <title>{fullTitle}</title>
 
     <script is:inline>

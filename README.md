@@ -145,6 +145,15 @@ The Astro configuration reads `GITHUB_REPOSITORY` during the workflow, so it aut
 
 For a custom domain, set the repository variable `SITE_URL` to the full origin, such as `https://pardeep.example`, and set `SITE_BASE` to `/`. The fallback `https://example.com` is used only for local builds, so replace it or set `SITE_URL` before using a local production build for SEO validation.
 
+### Ask Google to index the site
+
+1. Add `https://pkpardeepkumar30.github.io/` as a URL-prefix property in [Google Search Console](https://search.google.com/search-console/).
+2. Choose the HTML tag verification method and copy only the token from the tag's `content` attribute.
+3. In the GitHub repository, open **Settings → Secrets and variables → Actions → Variables** and add `GOOGLE_SITE_VERIFICATION` with that token. Re-run the Pages workflow, then finish verification in Search Console.
+4. Submit `https://pkpardeepkumar30.github.io/sitemap-index.xml` in Search Console and use URL Inspection to request indexing for the homepage.
+
+The site already exposes crawlable HTML, canonical URLs, structured data, `robots.txt`, and the sitemap. Verification and sitemap submission still require access to your Google account and cannot be completed by the build itself.
+
 ## Project structure
 
 ```text

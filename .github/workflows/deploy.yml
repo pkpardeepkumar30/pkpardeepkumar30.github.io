@@ -35,6 +35,8 @@ jobs:
 
       - name: Build static site
         run: npm run build
+        env:
+          PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

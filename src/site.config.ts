@@ -36,6 +36,6 @@ export const siteConfig = {
     },
     // Add your real profile URLs when ready; empty links are not displayed.
     { label: 'ORCID', href: '' },
-    { label: 'GitHub', href: '' }
+    { label: 'GitHub', href: 'https://github.com/pkpardeepkumar30' }
   ]
 } as const;
