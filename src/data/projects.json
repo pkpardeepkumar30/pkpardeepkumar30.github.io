@@ -7,7 +7,7 @@
     "description": "A data-driven civic strategy game in which players navigate institutions, public pressure, limited resources, and uncertain outcomes across multiple social scenarios.",
     "details": "I built a Rust server with Axum and Tokio, a responsive Phaser 3 web client, persistent campaigns, and validated JSON/YAML scenario packs so new environments can be added without changing the engine.",
     "stack": ["Rust", "Axum", "Tokio", "Phaser 3", "PWA", "Docker"],
-    "live": "https://democracy-game-236938724273.europe-west1.run.app/",
+    "live": "https://the-republic.pages.dev/",
     "source": "https://github.com/pkpardeepkumar30/Democracy-Simulator"
   },
   {
@@ -29,7 +29,7 @@
     "description": "A private-room chess application for two players, with instant guest play and optional verified accounts for persistent cross-device game history.",
     "details": "It combines responsive move interaction with server-authoritative rule validation, transaction-safe real-time synchronization, complete draw conditions, reconnect handling, and durable Appwrite records.",
     "stack": ["Next.js", "React", "TypeScript", "Appwrite", "Realtime"],
-    "live": "",
+    "live": "https://chess-duel.appwrite.network/",
     "source": "https://github.com/pkpardeepkumar30/chess"
   },
   {

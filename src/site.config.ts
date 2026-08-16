@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: 'Pardeep Kumar',
   shortName: 'PK',
-  title: 'Pardeep Kumar | Numerical Methods Researcher',
+  title: 'Pardeep Kumar | Scientific Computing Researcher',
   description:
-    'Research in numerical methods, scientific computing, thermodynamic modeling, and high-performance simulation at CWI Amsterdam and TU Delft.',
+    'Scientific computing, numerical methods, and an emerging teaching practice focused on making mathematics and physics approachable.',
   email: 'pardeep.iitb@gmail.com',
   location: 'Amsterdam, The Netherlands',
   affiliations: [
@@ -12,13 +12,13 @@ export const siteConfig = {
   ],
   navigation: [
     { label: 'Home', href: '', enabled: true },
-    { label: 'Projects', href: 'projects/', enabled: true },
     { label: 'Research', href: 'research/', enabled: true },
     { label: 'Publications', href: 'publications/', enabled: true },
+    { label: 'Teaching', href: 'teaching/', enabled: true },
     { label: 'CV', href: 'cv/', enabled: true },
     { label: 'Blog', href: 'blog/', enabled: true },
+    { label: 'Web', href: 'web/', enabled: true },
     { label: 'Talks', href: 'talks/', enabled: false },
-    { label: 'Teaching', href: 'teaching/', enabled: false }
   ],
   social: [
     { label: 'Email', href: 'mailto:pardeep.iitb@gmail.com' },

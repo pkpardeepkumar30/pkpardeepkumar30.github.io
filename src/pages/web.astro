@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+---
+
+<BaseLayout
+  title="Web applications"
+  description="Independent web applications by Pardeep Kumar, including The Republic, Nazar India, Chess Duel, and WorkAtlas."
+  className="page-main"
+>
+  <div class="shell">
+    <header class="page-heading projects-heading">
+      <p class="eyebrow">A complementary practice</p>
+      <h1>Web applications</h1>
+      <p class="lede">
+        Alongside scientific computing and my developing interest in education, I build
+        independent web applications. They are a secondary strand of my work: a place
+        to explore useful ideas, learn unfamiliar technologies, and turn a question
+        into a working public product.
+      </p>
+    </header>
+
+    <div class="project-grid project-grid-detailed">
+      {projects.map((project) => <ProjectCard project={project} detailed />)}
+    </div>
+  </div>
+</BaseLayout>

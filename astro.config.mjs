@@ -16,7 +16,11 @@ export default defineConfig({
   site: process.env.SITE_URL ?? inferredSite,
   base: process.env.SITE_BASE ?? inferredBase,
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => !page.endsWith('/projects/')
+    })
+  ],
   markdown: {
     processor: unified({
       remarkPlugins: [remarkMath],

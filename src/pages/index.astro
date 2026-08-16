@@ -2,8 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import PublicationCard from '../components/PublicationCard.astro';
-import ProjectCard from '../components/ProjectCard.astro';
-import projects from '../data/projects.json';
 import publications from '../data/publications.json';
 import news from '../data/news.json';
 import { siteConfig } from '../site.config';
@@ -17,7 +15,7 @@ const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: siteConfig.name,
-  jobTitle: 'Researcher in Numerical Methods and Scientific Computing',
+  jobTitle: 'Scientific Computing Researcher and Aspiring Educator',
   affiliation: siteConfig.affiliations.map((item) => ({
     '@type': 'Organization',
     name: item.name,
@@ -32,7 +30,7 @@ const personSchema = {
 
 <BaseLayout
   title="Pardeep Kumar"
-  description="Numerical methods, scientific software, and web applications by Pardeep Kumar at CWI Amsterdam and TU Delft."
+  description="Scientific computing, numerical methods, and an emerging teaching practice by Pardeep Kumar at CWI Amsterdam and TU Delft."
   className="home-main"
 >
   <Fragment slot="head">
@@ -41,24 +39,26 @@ const personSchema = {
 
   <section class="hero shell">
     <div class="hero-copy">
-      <p class="eyebrow">Researcher · Software developer · Independent builder</p>
+      <p class="eyebrow">Scientific computing · Numerical methods · Education</p>
       <h1>Pardeep Kumar</h1>
       <p class="hero-tagline">
-        I enjoy understanding difficult problems and making useful things from what I learn.
+        I enjoy understanding difficult problems and making their central ideas clearer for others.
       </p>
       <p class="hero-lede">
-        Hello, I’m Pardeep. I’m a researcher and software developer based in
-        Amsterdam. I’m naturally curious, and much of my work begins with a simple
-        question: can a complicated idea be made clearer, faster, or more useful?
+        Hello, I’m Pardeep, a scientific computing researcher based in Amsterdam.
+        I’m naturally curious, and much of my work begins with a simple question:
+        how can a complicated idea be understood clearly enough to explain, test,
+        and use?
       </p>
       <p class="hero-supporting">
-        That question has taken me through scientific research, engineering software,
-        and independent web projects. Today I divide my time between completing my
-        PhD at CWI and TU Delft, developing computational tools, and building products
-        of my own.
+        My doctoral thesis at TU Delft has now been submitted after research carried
+        out at CWI. As I prepare for the next stage of my career, I am exploring how
+        I can bring my experience in mathematics, physics, and computation to
+        high-school teaching—work I feel genuinely drawn to.
       </p>
       <div class="hero-actions">
-        <a class="button-link" href={`${base}projects/`}>Explore my work</a>
+        <a class="button-link" href={`${base}research/`}>Explore my research</a>
+        <a class="text-link hero-secondary-link" href={`${base}teaching/`}>Teaching direction →</a>
         <a class="text-link hero-secondary-link" href={`${base}cv/`}>Read my CV →</a>
       </div>
       <SocialLinks />
@@ -76,8 +76,8 @@ const personSchema = {
         />
       </div>
       <figcaption>
-        <span>Researcher</span>
-        <span>Scientific software developer</span>
+        <span>Scientific computing</span>
+        <span>Research and education</span>
       </figcaption>
     </figure>
   </section>
@@ -103,33 +103,20 @@ const personSchema = {
           can use and trust.
         </p>
         <p>
-          My doctoral research gives me the opportunity to study scientific questions
-          in depth, particularly how complex fluids behave during transport. My
-          independent projects give me a different kind of creative space: I have built
-          tools for civic decision-making, transparent news, online chess, and organizing
-          research and long-term ideas.
+          My doctoral research has given me the opportunity to study scientific
+          questions in depth, particularly how complex fluids behave during transport.
+          With my thesis submitted, I am now thinking seriously about education: how
+          patience, good questions, visual explanations, and computation can help
+          high-school students become more confident with mathematics and physics.
         </p>
         <ul class="about-interest-list" aria-label="Current interests">
-          <li>Scientific research</li>
-          <li>Software craftsmanship</li>
-          <li>Independent products</li>
-          <li>Clear communication</li>
-          <li>Continuous learning</li>
+          <li>Scientific computing</li>
+          <li>Numerical methods</li>
+          <li>Teaching and outreach</li>
+          <li>Clear explanation</li>
+          <li>Thoughtful software</li>
         </ul>
       </div>
-    </div>
-  </section>
-
-  <section class="section-block featured-projects-section">
-    <div class="shell section-heading-row">
-      <div>
-        <p class="eyebrow">Built from first principles</p>
-        <h2>Selected web projects</h2>
-      </div>
-      <a class="text-link" href={`${base}projects/`}>See project details →</a>
-    </div>
-    <div class="shell project-grid">
-      {projects.map((project) => <ProjectCard project={project} />)}
     </div>
   </section>
 
@@ -141,8 +128,8 @@ const personSchema = {
           <h2>Explore</h2>
         </div>
         <p>
-          Follow the mathematics, browse the published work, or read the longer
-          explanations behind the models and software.
+          Follow the mathematics, browse the published work, or learn about the
+          educational direction I am beginning to pursue.
         </p>
       </div>
 
@@ -159,13 +146,34 @@ const personSchema = {
           <p>Peer-reviewed work on phase equilibrium and CO₂-rich multiphase transport.</p>
           <strong>Browse the papers →</strong>
         </a>
-        <a class="explore-card" href={`${base}blog/`}>
+        <a class="explore-card" href={`${base}teaching/`}>
           <span>03</span>
-          <h3>Research notes</h3>
-          <p>Plain-language derivations, numerical experiments, and evolving technical ideas.</p>
-          <strong>Open the notes →</strong>
+          <h3>Teaching</h3>
+          <p>My developing approach to high-school mathematics, physics, and computational thinking.</p>
+          <strong>Read my teaching direction →</strong>
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="section-block shell research-intro">
+    <div>
+      <p class="eyebrow">Looking ahead</p>
+      <h2>Teaching is the direction I want to grow into</h2>
+    </div>
+    <div class="research-intro-copy">
+      <p>
+        Research has taught me that difficult ideas become manageable when they are
+        broken into honest questions, concrete examples, and small steps. I would like
+        to bring that habit of mind to high-school students and help them see science
+        as something they can reason about—not merely memorise.
+      </p>
+      <ul>
+        <li>Mathematics grounded in intuition as well as method</li>
+        <li>Physics connected to models, experiments, and everyday experience</li>
+        <li>Computational thinking introduced through small, purposeful projects</li>
+      </ul>
+      <a class="text-link" href={`${base}teaching/`}>More about my teaching interests →</a>
     </div>
   </section>
 
@@ -234,12 +242,12 @@ const personSchema = {
   <section class="section-block shell contact-band">
     <div>
       <p class="eyebrow">Let’s talk</p>
-      <h2>Research, software, or an interesting problem?</h2>
+      <h2>Research, education, or an interesting problem?</h2>
     </div>
     <div>
       <p>
         I welcome conversations about numerical methods, scientific computing,
-        full-stack products, and research collaborations.
+        high-school teaching and outreach, and research collaborations.
       </p>
       <a class="button-link" href={`mailto:${siteConfig.email}`}>Email me</a>
     </div>

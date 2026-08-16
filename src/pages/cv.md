@@ -1,233 +1,122 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Curriculum Vitae
-# description: Curriculum vitae of Pardeep Kumar, spanning web applications, scientific computing, and engineering software.
+description: Curriculum vitae of Pardeep Kumar, scientific computing researcher and aspiring high-school educator.
 ---
 
-**Software Engineer | Scientific Computing | Simulation Tools | Web Development | Educator**  
-Amsterdam, the Netherlands  
-[Email](mailto:pardeep.iitb@gmail.com) | [LinkedIn](https://www.linkedin.com/in/pkpardeepkumar30/)
+**Scientific Computing Researcher | Numerical Methods | Aspiring Educator**<br>
+Amsterdam, the Netherlands<br>
+[Email](mailto:pardeep.iitb@gmail.com) · [LinkedIn](https://www.linkedin.com/in/pkpardeepkumar30/) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=th4w0rYAAAAJ) · [Download PDF résumé](./Resume_Pardeep_Kumar_SD.pdf)
 
-## Summary
+## Profile
 
-Software engineer with more than ten years of experience building reliable, efficient, and maintainable applications across scientific computing, engineering software, web development, and data-intensive systems.
+Scientific computing researcher with a submitted doctoral thesis from Delft University of Technology and more than ten years of experience in numerical modelling, simulation software, and computational problem-solving. My research at CWI Amsterdam concerns robust numerical methods for multiphase thermodynamics and CO₂-rich transport.
 
-I develop scientific and engineering software, numerical simulation tools, performance-critical systems and full-stack web applications. My experience spans energy, semiconductors, automotive engineering, finance, and computational physics, and I am comfortable adapting to different languages, frameworks, and technology stacks according to the needs of a project.
+I am now exploring a deliberate move toward high-school education. Teaching appeals to me because it combines the parts of research I value most: asking careful questions, making difficult ideas understandable, and helping someone develop the confidence to reason independently. I am particularly interested in teaching mathematics, physics, and computational thinking.
 
-I use AI-assisted development and prompt engineering to accelerate code exploration, implementation, testing, documentation, verification, and technical research. I am particularly interested in combining sound software-engineering practices with modern development tools to turn complex requirements into practical and accessible products.
+I bring broad experience across academic research, energy, semiconductors, automotive engineering, finance, and aerospace. Alongside this primary scientific and educational direction, I also develop independent [web applications](../web/) as a secondary creative and technical practice.
 
-I am open to software engineering, full-stack web development, scientific software, high-performance computing, and AI-assisted development roles.
+## Teaching and educational direction
 
-## Selected web applications
+- Seeking opportunities to contribute to high-school mathematics, physics, computing, and science outreach while learning from experienced educators.
+- Interested in explanations that connect equations to intuition, diagrams, experiments, physical units, and small computational models.
+- Able to draw on real examples from fluid mechanics, electromagnetics, thermodynamics, aerospace engineering, and software development.
+- Committed to a classroom culture in which questions and mistakes are useful parts of learning, and students learn how to test an argument rather than only memorise a result.
+- Developing ideas for short lessons and demonstrations that make abstract concepts visible and invite students to investigate them.
 
-### The Republic - civic strategy simulation
+This is an emerging teaching practice, not a claim of prior school-teaching experience. My aim is to bring the patience, intellectual honesty, and explanatory habits developed through interdisciplinary research into the classroom.
 
-[The Republic](https://democracy-game-236938724273.europe-west1.run.app/) · [github](https://github.com/pkpardeepkumar30/Democracy-Simulator)
+## Education
 
-- Designed a data-driven civic strategy game with stochastic outcomes, limited resources, institutions, stakeholders, and state-gated player actions.
-- Built a low-latency Rust server using Axum and Tokio, with persistent sessions and idempotent action handling.
-- Developed a responsive Phaser 3 browser client and installable PWA, with an SVG/DOM fallback and mobile-ready interaction.
-- Created validated JSON/YAML scenario packs and a reusable registry so new civic environments can be added without changing the game engine.
+### PhD in Mechanical Engineering
+**Delft University of Technology, the Netherlands**<br>
+2022–2026
 
-### Nazar India - source-transparent news platform
+- Doctoral thesis submitted; defence planned for January 2027.
+- Research conducted primarily at CWI Amsterdam, with industrial collaboration from Shell Projects & Technology.
+- Focus: numerical methods for transient multiphase flow of multicomponent mixtures in pipelines.
 
-[Nazar India](https://nazar-india.pages.dev/) · [github](https://github.com/pkpardeepkumar30/news)
+### MSc in Aerospace Engineering
+**Indian Institute of Technology Bombay, India**<br>
+2012–2014
 
-- Built a dependency-free Indian news aggregator that keeps original sources, evidence status, disagreements, and confidence rationale visible.
-- Developed a Python pipeline for public RSS collection, structured AI-assisted editorial distillation, validation, archiving, and static publishing.
-- Added search, source and category filters, permanent story pages, structured metadata, sitemap generation, and a source-methodology view.
-- Automated four-hour collection and publication workflows with GitHub Actions and deployed the public site through Cloudflare.
+- Research focus: finite-volume time-domain methods for electromagnetic propagation and scattering.
 
-### Chess Duel - real-time multiplayer chess
+## Scientific computing and research
 
-[Chess Duel](https://chess-duel.appwrite.network/) · [github](https://github.com/pkpardeepkumar30/chess)
+My doctoral work connects hyperbolic conservation laws, nonlinear thermodynamics, and finite-volume computation. The central question is how formulation, numerical variables, and discretisation choices affect physical consistency, robustness, and efficiency.
 
-- Developed a private-room chess application with instant guest play and optional verified-email accounts.
-- Implemented server-authoritative move validation and transaction-safe real-time synchronization using Next.js, TypeScript, and Appwrite.
-- Covered the complete ruleset, including castling, en passant, promotion, checkmate, stalemate, repetition, the fifty-move rule, and insufficient material.
-- Added reconnect handling, move history, recent games, responsive board orientation, and persistent cross-device records for registered players.
+Selected contributions include:
 
-### WorkAtlas - project and knowledge workspace
+- reformulating constrained phase-equilibrium calculations in a more efficient variable space;
+- coupling phase-stability and equilibrium calculations to finite-volume flow solvers;
+- simulating tank and pipeline depressurisation for CO₂-rich mixtures;
+- developing thermodynamically consistent temperature-evolution models for multiphase flow;
+- investigating exact and approximate Riemann problems for real-fluid mixtures;
+- creating Julia and Python research software with validation and reproducibility workflows.
 
-[WorkAtlas](https://workatlas-kappa.vercel.app/) · [github](https://github.com/pkpardeepkumar30/workatlas)
+### Core expertise
 
-- Designed and developed a multi-user workspace for research, software, publications, experiments, projects, and tasks.
-- Built the full-stack application using Next.js, React, TypeScript, PostgreSQL, and Drizzle ORM.
-- Implemented authentication, owner-scoped database access, project and Kanban workflows, comments, reminders, documentation, and portable data exports.
-- Created a configuration-driven content system and deployed the application with Vercel and Neon PostgreSQL.
-
-## Web-development expertise
-
-### Languages and user interfaces
-
-TypeScript, JavaScript, HTML, CSS, React, and responsive web-interface development.
-
-### Full-stack development
-
-Next.js, Django, Flask, REST API development, server-side application logic, authentication, form handling, input validation, and database-backed application development.
-
-### Databases and data modelling
-
-PostgreSQL, Neon, Drizzle ORM, relational schema design, database migrations, and persistent multi-user data.
-
-### Deployment and development tools
-
-Vercel, Docker, Kubernetes, Node.js, npm, Git, CI/CD workflows, containerised deployment, and environment-based application configuration.
-
-## Scientific-computing expertise
-
-### Scientific programming
-
-C++, Julia, Python, C#, F#, Java, MATLAB, and Erlang.
-
-### Numerical and mathematical methods
-
-Finite-volume methods, finite-difference methods, Riemann solvers, high-resolution reconstruction, time integration, nonlinear equations, constrained optimisation, automatic differentiation, numerical linear algebra, thermodynamic stability analysis, and phase-equilibrium calculations.
-
-### Computational physics
-
-Multiphase flow, real-fluid thermodynamics, computational fluid dynamics, computational electromagnetics, general relativity, finite-element concepts, and wave propagation.
-
-### High-performance computing
-
-Multithreading, concurrent programming, GPU acceleration, CUDA, MPI, shared memory, vectorisation, and performance-oriented C++ and Julia.
-
-### Scientific software engineering
-
-Object-oriented and functional programming, software architecture, interoperability, test-driven development, unit testing, Git, Perforce, and scientific-software validation.
+- **Numerical methods:** finite-volume and finite-difference methods, Riemann solvers, high-resolution reconstruction, time integration, nonlinear equations, constrained optimisation, automatic differentiation, and numerical linear algebra.
+- **Computational physics:** multiphase flow, real-fluid thermodynamics, computational fluid dynamics, computational electromagnetics, wave propagation, and numerical relativity.
+- **Scientific programming:** C++, Julia, Python, C#, F#, Java, MATLAB, and Erlang.
+- **High-performance computing:** multithreading, concurrent programming, CUDA, MPI, shared memory, vectorisation, and performance-oriented scientific software.
+- **Software practice:** modular architecture, interoperability, testing, validation, version control, and reproducible computation.
 
 ## Professional experience
 
 ### PhD Researcher in Scientific Computing  
 **Centrum Wiskunde & Informatica (CWI), Amsterdam**  
-<!-- **Doctoral candidate, Delft University of Technology**   -->
 August 2022–present
 
-My doctoral research focuses on numerical methods for transient multiphase flow of multicomponent mixtures in pipelines. It integrates hyperbolic conservation laws with nonlinear thermodynamics within a finite-volume framework.
-
-Selected contributions include:
-
-- developing thermodynamic formulations for pure and multicomponent two-phase systems;
-- reformulating the energy-volume-composition space thermodynamic equilibrium problem in temperature–volume–composition space;
-- coupling phase-stability and equilibrium calculations to finite-volume flow solvers;
-- simulating tank- and pipeline-depressurisation models for CO₂-rich mixtures;
-- constructing numerical methods and validation workflows for phase-transition problems;
-- investigating exact and approximate Riemann problems for real-fluid mixtures;
-- developing Julia and Python research software for thermodynamics and transient flow.
-
-<!-- The dissertation has been submitted, with the defence planned for January 2027. -->
+- Developed numerical formulations and software for multicomponent, multiphase thermodynamics and transient flow.
+- Connected mathematical analysis, physical modelling, algorithm design, implementation, and validation in an interdisciplinary research setting.
+- Published three peer-reviewed papers and presented work on Riemann problems for two-phase mixtures.
 
 ### Software Engineer  
 **ASM International, Almere, the Netherlands**  
 February 2022–August 2022
 
-- Enhanced the features of the inhouse Java-based simulator for semiconductor thin-film deposition equipment.
-- Refactored legacy software to improve modularity, maintainability, and testability.
-- Implemented feature enhancements and corrected defects in engineering simulation workflows.
-- Acquired practical knowledge of semiconductor deposition-tool architecture and operation.
+- Enhanced and refactored a Java-based simulator for semiconductor thin-film deposition equipment.
+- Improved modularity, testability, and engineering simulation workflows.
 
 ### Software Engineer  
 **Shell, Amsterdam, the Netherlands**  
 June 2019–December 2021
 
 - Migrated numerical workflows from Python to C++ and CUDA, reducing a representative runtime from approximately 30 minutes to 15 seconds.
-- Developed concurrent infrastructure for communication between real-time field databases and process and pipeline simulation software.
-- Improved data-access throughput by more than an order of magnitude for multi-client workflows.
-- Built interoperability layers between C#, Managed C++, and C++.
-- Developed modular scientific-visualisation software for an in-house dynamic multiphase-flow simulator.
+- Developed concurrent data infrastructure and interoperability layers for real-time process and pipeline simulation software.
+- Built modular scientific visualisation for an in-house dynamic multiphase-flow simulator.
 
-### Software Engineer  
-**Aakraya Research, Bangalore, India**  
-February 2019–April 2019
+### Earlier engineering roles
+**Aakraya Research, KLA-Tencor, Altair, and Fluidyn**<br>
+July 2014–April 2019
 
-- Developed offline regression-model generation from historical market data for high-frequency trading.
-- Built tools for evaluating live-trading performance through profit-and-loss metrics.
-- Improved C++ order-book infrastructure for efficient order matching.
-
-### Software Engineer II  
-**KLA-Tencor, Chennai, India**  
-May 2018–November 2018
-
-- Developed server infrastructure for cross-application integration using C# and F#.
-- Designed a silica-wafer thickness simulation engine using C#, F#, and MATLAB.
-- Implemented reusable software libraries, testing infrastructure, and feature enhancements.
-- Developed an Erlang-based fault-tolerance mechanism with failover and recovery.
-
-### Software Engineer  
-**Altair, Bangalore, India**  
-March 2016–April 2018
-
-- Developed shared-memory infrastructure for high-volume interprocess data transfer in C++.
-- Implemented geometry- and mesh-manipulation tools for HyperMesh.
-- Migrated C++/Python bindings from SWIG to Boost.Python.
-- Refactored engineering software toward a model–view–controller architecture.
-- Developed Python testing frameworks for C++ components and extended COM-based APIs.
-
-### Research and Development Engineer  
-**Fluidyn, Bangalore, India**  
-July 2014–March 2016
-
-- Developed a finite-volume time-domain electromagnetic solver in C++ with MPI parallelisation.
-- Implemented second- and third-order spatial discretisation methods.
-- Developed near-to-far-field transformations for radar-cross-section prediction.
-- Extended the Navier–Stokes solver for far-field aeroacoustic prediction using retarded-time integration.
-
-## Education
-
-### PhD in Mechanical Engineering  
-**Delft University of Technology, the Netherlands**  
-2022–2026
-
-Research conducted primarily at CWI Amsterdam, with industrial collaboration from Shell Projects & Technology.
-
-### MSc in Aerospace Engineering  
-**Indian Institute of Technology Bombay, India**  
-2012–2014
-
-Research focus: finite-volume time-domain methods for electromagnetic propagation and scattering.
-
-## Research interests
-
-- Hyperbolic conservation laws and Riemann problems
-- Multiphase thermodynamics and phase equilibrium
-- CO₂ transport and carbon capture and storage
-- Finite-volume and high-resolution numerical methods
-- Computational electromagnetics
-- Numerical relativity
-- Constrained optimisation and nonlinear solvers
-- High-performance scientific computing
-- Structure-preserving and compatible discretisations
+- Worked on high-frequency trading infrastructure, semiconductor simulation, engineering software architecture, geometry and mesh tools, and computational physics.
+- Developed a parallel finite-volume time-domain electromagnetic solver and higher-order spatial discretisation methods at Fluidyn.
+- Built shared-memory and testing infrastructure and modernised C++/Python integrations at Altair.
 
 ## Peer-reviewed publications
 
-### 2026
+1. **Pardeep Kumar** and Patricio I. Rosen Esquivel. “A Reformulation of UVN-Flash for Multicomponent Two-Phase Systems with Application to CO₂-Rich Mixture Transport in Pipelines.” *Computers & Fluids*, 314, 107108, 2026. [PDF](../articles/MulticomponentTransport.pdf) · [DOI](https://doi.org/10.1016/j.compfluid.2026.107108)
+2. **Pardeep Kumar** and Patricio I. Rosen Esquivel. “Solving the UVN-Flash Problem in TVN-Space.” *Fluid Phase Equilibria*, 599, 114528, 2026. [PDF](../articles/UVNFlashInTVNSpace.pdf) · [DOI](https://doi.org/10.1016/j.fluid.2025.114528)
+3. **Pardeep Kumar**, Benjamin Sanderse, Patricio I. Rosen Esquivel, and R. A. W. M. Henkes. “A New Temperature Evolution Equation That Enforces Thermodynamic Vapour–Liquid Equilibrium in Multiphase Flows—Application to CO₂ Modelling.” *Computers & Fluids*, 289, 106524, 2025. [PDF](../articles/NewTemperatureEquation.pdf) · [DOI](https://doi.org/10.1016/j.compfluid.2024.106524)
 
-1. **Pardeep Kumar** and Patricio I. Rosen Esquivel.  
-   “A Reformulation of UVN-Flash for Multicomponent Two-Phase Systems with Application to CO₂-Rich Mixture Transport in Pipelines.”  
-   *Computers & Fluids*, 314, 107108, 2026.  
-   [Article PDF](../articles/MulticomponentTransport.pdf) · [DOI](https://doi.org/10.1016/j.compfluid.2026.107108)
-
-2. **Pardeep Kumar** and Patricio I. Rosen Esquivel.  
-   “Solving the UVN-Flash Problem in TVN-Space.”  
-   *Fluid Phase Equilibria*, 599, 114528, 2026.  
-   [Article PDF](../articles/UVNFlashInTVNSpace.pdf) · [DOI](https://doi.org/10.1016/j.fluid.2025.114528)
-
-### 2025
-
-3. **Pardeep Kumar**, Benjamin Sanderse, Patricio I. Rosen Esquivel, and R. A. W. M. Henkes.  
-   “A New Temperature Evolution Equation That Enforces Thermodynamic Vapour–Liquid Equilibrium in Multiphase Flows — Application to CO₂ Modelling.”  
-   *Computers & Fluids*, 289, 106524, 2025.  
-   [Article PDF](../articles/NewTemperatureEquation.pdf) · [DOI](https://doi.org/10.1016/j.compfluid.2024.106524)
+See the complete, citation-ready [publications page](../publications/).
 
 ## Selected conference presentation
 
-### HYP2026 : 20th International Conference on Hyperbolic Problems  
-**University of Stuttgart, Stuttgart, Germany, 2026**
-
+**HYP2026: 20th International Conference on Hyperbolic Problems**, University of Stuttgart, Germany, 2026<br>
 “A Riemann Problem in Multicomponent Two-Phase Mixtures.”
+
+## Web application experience
+
+I independently developed The Republic, Nazar India, Chess Duel, and WorkAtlas. This work demonstrates product thinking, self-directed learning, and the ability to carry an idea from architecture to public deployment, but it remains secondary to my scientific-computing and teaching direction.
+
+[See my web application experience →](../web/)
 
 ## Languages
 
-- English : proficient
-- Hindi : proficient
-- Dutch : A2
+- English: proficient
+- Hindi: proficient
+- Dutch: A2
