@@ -100,5 +100,86 @@ const structuredData = {
       <slot />
     </main>
     <SiteFooter />
+
+    <dialog class="contact-dialog" aria-labelledby="contact-dialog-title">
+      <div class="contact-dialog-panel">
+        <button class="contact-dialog-close" type="button" aria-label="Close contact dialog">
+          <span aria-hidden="true">×</span>
+        </button>
+        <p class="eyebrow">Get in touch</p>
+        <h2 id="contact-dialog-title">Send me a message</h2>
+        <p>
+          You can copy my address or open it directly in your preferred email application.
+        </p>
+        <a
+          class="contact-email-address"
+          href={`mailto:${siteConfig.email}`}
+          data-email-direct
+        >
+          {siteConfig.email}
+        </a>
+        <div class="contact-dialog-actions">
+          <button class="button-link contact-copy-button" type="button" data-copy-email>
+            Copy email
+          </button>
+          <a
+            class="text-link"
+            href={`mailto:${siteConfig.email}`}
+            data-email-direct
+          >
+            Open email app →
+          </a>
+        </div>
+        <p class="contact-copy-status" aria-live="polite"></p>
+      </div>
+    </dialog>
+
+    <script is:inline define:vars={{ contactEmail: siteConfig.email }}>
+      const dialog = document.querySelector('.contact-dialog');
+      const closeButton = dialog?.querySelector('.contact-dialog-close');
+      const copyButton = dialog?.querySelector('[data-copy-email]');
+      const copyStatus = dialog?.querySelector('.contact-copy-status');
+      const emailAddress = dialog?.querySelector('.contact-email-address');
+
+      document.addEventListener('click', (event) => {
+        const link = event.target instanceof Element
+          ? event.target.closest('a[href^="mailto:"]')
+          : null;
+
+        if (!(link instanceof HTMLAnchorElement) || link.hasAttribute('data-email-direct')) {
+          return;
+        }
+
+        if (dialog instanceof HTMLDialogElement && typeof dialog.showModal === 'function') {
+          event.preventDefault();
+          if (copyStatus) copyStatus.textContent = '';
+          dialog.showModal();
+        }
+      });
+
+      closeButton?.addEventListener('click', () => {
+        if (dialog instanceof HTMLDialogElement) dialog.close();
+      });
+
+      dialog?.addEventListener('click', (event) => {
+        if (event.target === dialog && dialog instanceof HTMLDialogElement) dialog.close();
+      });
+
+      copyButton?.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(contactEmail);
+          if (copyStatus) copyStatus.textContent = 'Email address copied.';
+        } catch {
+          if (emailAddress) {
+            const selection = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(emailAddress);
+            selection?.removeAllRanges();
+            selection?.addRange(range);
+          }
+          if (copyStatus) copyStatus.textContent = 'Copy is unavailable; the address is selected.';
+        }
+      });
+    </script>
   </body>
 </html>

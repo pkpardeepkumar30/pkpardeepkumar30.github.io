@@ -12,10 +12,10 @@ After years of research and engineering, I have seen how often a difficult subje
 
 ## What I hope to teach
 
-My background is most directly suited to:
+My background is most directly suited to teaching following subjects to senior students (later four years of high school):
 
-- mathematics, from foundational reasoning to calculus and numerical ideas;
-- physics, with an emphasis on models, units, assumptions, and physical intuition;
+- mathematics;
+- physics;
 - computational thinking and introductory programming;
 - small projects that connect mathematics and physics to questions students can investigate themselves.
 

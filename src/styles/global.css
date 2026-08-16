@@ -248,6 +248,95 @@ pre code {
   border-color: var(--accent);
 }
 
+.contact-dialog {
+  width: min(34rem, calc(100% - 2rem));
+  max-width: none;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 0.45rem;
+  background: var(--surface-raised);
+  color: var(--ink);
+  box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 28%);
+}
+
+.contact-dialog::backdrop {
+  background: rgb(7 20 18 / 62%);
+  backdrop-filter: blur(4px);
+}
+
+.contact-dialog-panel {
+  position: relative;
+  padding: clamp(1.6rem, 5vw, 3rem);
+}
+
+.contact-dialog-panel h2 {
+  margin: 0 2.5rem 0.8rem 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.contact-dialog-panel > p:not(.eyebrow, .contact-copy-status) {
+  max-width: 29rem;
+  margin: 0 0 1.4rem;
+  color: var(--muted);
+}
+
+.contact-dialog-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.contact-dialog-close:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.contact-email-address {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--accent-strong);
+  font-family: var(--sans);
+  font-size: clamp(1.05rem, 4vw, 1.35rem);
+  font-weight: 750;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.contact-dialog-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+  gap: 1.25rem;
+}
+
+.contact-copy-button {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.contact-copy-status {
+  min-height: 1.4em;
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.92fr);
