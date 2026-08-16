@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import projects from '../data/projects.json';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -11,15 +13,43 @@ import projects from '../data/projects.json';
 >
   <div class="shell">
     <header class="page-heading projects-heading">
-      <p class="eyebrow">A complementary practice</p>
+      <p class="eyebrow">Product-oriented software</p>
       <h1>Web applications</h1>
       <p class="lede">
-        Alongside scientific computing and my developing interest in education, I build
-        independent web applications. They are a secondary strand of my work: a place
-        to explore useful ideas, learn unfamiliar technologies, and turn a question
-        into a working public product.
+        I independently design, build, and deploy full-stack applications. These
+        projects combine product thinking with TypeScript, React, Next.js, Python,
+        Rust, PostgreSQL, real-time systems, authentication, automation, and cloud
+        deployment.
       </p>
+      <div class="hero-actions">
+        <a class="button-link" href={`${base}cv/Resume_Pardeep_Kumar_Web.pdf`}>
+          Download web résumé
+        </a>
+        <a class="text-link hero-secondary-link" href={`${base}software/`}>
+          Scientific software experience →
+        </a>
+      </div>
     </header>
+
+    <section class="research-intro web-expertise" aria-labelledby="web-expertise-title">
+      <div>
+        <p class="eyebrow">Full-stack capabilities</p>
+        <h2 id="web-expertise-title">From architecture to public deployment</h2>
+      </div>
+      <div class="research-intro-copy">
+        <p>
+          I build responsive interfaces, server-side application logic, relational data
+          models, authentication and permissions, APIs, real-time workflows, automated
+          content pipelines, tests, and deployment infrastructure.
+        </p>
+        <ul>
+          <li>Next.js, React, TypeScript, JavaScript, HTML, and CSS</li>
+          <li>PostgreSQL, Drizzle ORM, Appwrite, authentication, and data modelling</li>
+          <li>Python and Rust services, validation pipelines, and scheduled automation</li>
+          <li>Vercel, Cloudflare, Docker, GitHub Actions, and production configuration</li>
+        </ul>
+      </div>
+    </section>
 
     <div class="project-grid project-grid-detailed">
       {projects.map((project) => <ProjectCard project={project} detailed />)}

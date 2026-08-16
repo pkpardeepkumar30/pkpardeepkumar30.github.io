@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: 'Pardeep Kumar',
   shortName: 'PK',
-  title: 'Pardeep Kumar | Scientific Computing Researcher',
+  title: 'Pardeep Kumar | Scientific Software Engineer',
   description:
-    'Scientific computing, numerical methods, and an emerging teaching practice focused on making mathematics and physics approachable.',
+    'Scientific software engineering, numerical methods, high-performance computing, and independent web applications.',
   email: 'pardeep.iitb@gmail.com',
   location: 'Amsterdam, The Netherlands',
   affiliations: [
@@ -14,10 +14,10 @@ export const siteConfig = {
     { label: 'Home', href: '', enabled: true },
     { label: 'Research', href: 'research/', enabled: true },
     { label: 'Publications', href: 'publications/', enabled: true },
-    { label: 'Teaching', href: 'teaching/', enabled: true },
-    { label: 'CV', href: 'cv/', enabled: true },
-    { label: 'Blog', href: 'blog/', enabled: true },
+    { label: 'Software', href: 'software/', enabled: true },
     { label: 'Web', href: 'web/', enabled: true },
+    { label: 'Teaching', href: 'teaching/', enabled: true },
+    { label: 'Blog', href: 'blog/', enabled: true },
     { label: 'Talks', href: 'talks/', enabled: false },
   ],
   social: [

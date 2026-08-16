@@ -8,6 +8,8 @@ I am currently exploring how I can contribute to teaching high-school students. 
 
 After years of research and engineering, I have seen how often a difficult subject becomes approachable when someone finds the right question, example, diagram, or experiment. I would like to help young people experience that moment—especially in subjects that can otherwise feel abstract or intimidating.
 
+[Download teaching résumé](../cv/Resume_Pardeep_Kumar_Teaching.pdf)
+
 ## What I hope to teach
 
 My background is most directly suited to:
@@ -22,6 +24,24 @@ My background is most directly suited to:
 Good teaching should make room for curiosity as well as correctness. I want students to understand why a method works, what assumptions it depends on, and how they can check an answer for themselves. That means moving between equations, pictures, words, experiments, and code instead of treating one form of explanation as sufficient for everyone.
 
 My experience in scientific computing has made me comfortable with incomplete understanding: research advances by asking precise questions, testing ideas, learning from failed attempts, and improving a model. Those habits can also help students develop confidence and independence.
+
+## Background relevant to teaching
+
+- PhD in Mechanical Engineering from TU Delft, with research conducted at CWI Amsterdam; thesis submitted and defence planned for January 2027.
+- MSc in Aerospace Engineering from IIT Bombay.
+- More than ten years of experience applying mathematics, physics, numerical methods, and computation to real engineering problems.
+- Experience communicating interdisciplinary research through peer-reviewed articles and conference presentations.
+
+## Selected professional development at TU Delft
+
+I completed Graduate School courses that strengthen the communication, judgement, and collaborative skills relevant to education:
+
+- Scientific Storytelling;
+- Advanced Problem Solving and Decision Making;
+- Teamwork, Leadership and Group Dynamics;
+- Conversation Skills;
+- Embedding Societal Values in Research;
+- Scientific Integrity.
 
 ## My current direction
 

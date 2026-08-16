@@ -639,6 +639,10 @@ pre code {
   max-width: 60rem;
 }
 
+.web-expertise {
+  margin-bottom: clamp(4rem, 7vw, 7rem);
+}
+
 .explore-heading {
   align-items: start;
 }
