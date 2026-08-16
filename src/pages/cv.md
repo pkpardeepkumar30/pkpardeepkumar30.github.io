@@ -4,9 +4,9 @@ title: Curriculum Vitae
 description: Curriculum vitae of Pardeep Kumar, spanning web applications, scientific computing, and engineering software.
 ---
 
-**Software Developer — Web Applications and Scientific Computing**  
+**Software Developer : Web Applications and Scientific Computing**  
 Amsterdam, the Netherlands  
-[Email](mailto:pardeep.iitb@gmail.com) · [WorkAtlas](https://workatlas-kappa.vercel.app/)
+[Email](mailto:pardeep.iitb@gmail.com)
 
 ## Summary
 
@@ -22,7 +22,7 @@ I am open to software engineering, full-stack web development, scientific softwa
 
 ### The Republic - civic strategy simulation
 
-[Open The Republic](https://democracy-game-236938724273.europe-west1.run.app/) · [github](https://github.com/pkpardeepkumar30/Democracy-Simulator)
+[The Republic](https://democracy-game-236938724273.europe-west1.run.app/) · [github](https://github.com/pkpardeepkumar30/Democracy-Simulator)
 
 - Designed a data-driven civic strategy game with stochastic outcomes, limited resources, institutions, stakeholders, and state-gated player actions.
 - Built a low-latency Rust server using Axum and Tokio, with persistent sessions and idempotent action handling.
@@ -31,7 +31,7 @@ I am open to software engineering, full-stack web development, scientific softwa
 
 ### Nazar India - source-transparent news platform
 
-[Open Nazar India](https://nazar-india.pages.dev/) · [github](https://github.com/pkpardeepkumar30/news)
+[Nazar India](https://nazar-india.pages.dev/) · [github](https://github.com/pkpardeepkumar30/news)
 
 - Built a dependency-free Indian news aggregator that keeps original sources, evidence status, disagreements, and confidence rationale visible.
 - Developed a Python pipeline for public RSS collection, structured AI-assisted editorial distillation, validation, archiving, and static publishing.
@@ -40,7 +40,7 @@ I am open to software engineering, full-stack web development, scientific softwa
 
 ### Chess Duel - real-time multiplayer chess
 
-[github](https://github.com/pkpardeepkumar30/chess)
+[Chess Duel](https://chess-duel.appwrite.network/) · [github](https://github.com/pkpardeepkumar30/chess)
 
 - Developed a private-room chess application with instant guest play and optional verified-email accounts.
 - Implemented server-authoritative move validation and transaction-safe real-time synchronization using Next.js, TypeScript, and Appwrite.
@@ -49,7 +49,7 @@ I am open to software engineering, full-stack web development, scientific softwa
 
 ### WorkAtlas - project and knowledge workspace
 
-[Open WorkAtlas](https://workatlas-kappa.vercel.app/) · [github](https://github.com/pkpardeepkumar30/workatlas)
+[WorkAtlas](https://workatlas-kappa.vercel.app/) · [github](https://github.com/pkpardeepkumar30/workatlas)
 
 - Designed and developed a multi-user workspace for research, software, publications, experiments, projects, and tasks.
 - Built the full-stack application using Next.js, React, TypeScript, PostgreSQL, and Drizzle ORM.
@@ -221,7 +221,7 @@ Research focus: finite-volume time-domain methods for electromagnetic propagatio
 
 ## Selected conference presentation
 
-### HYP2026 — 20th International Conference on Hyperbolic Problems  
+### HYP2026 : 20th International Conference on Hyperbolic Problems  
 **University of Stuttgart, Stuttgart, Germany, 2026**
 
 “A Riemann Problem in Multicomponent Two-Phase Mixtures.”
