@@ -47,6 +47,6 @@ I completed Graduate School courses that strengthen the communication, judgement
 
 I have submitted my doctoral thesis and am now preparing for the next stage of my career. I am looking for opportunities to learn from experienced educators, contribute to school or outreach settings, and develop clear lessons and computational demonstrations for high-school students.
 
-I do not present this page as a record of classroom experience I have not yet had. It is a statement of intent, the relevant experience I bring, and the kind of educator I am working to become.
+<!-- I do not present this page as a record of classroom experience I have not yet had. It is a statement of intent, the relevant experience I bring, and the kind of educator I am working to become. -->
 
 If you would like to discuss a teaching, school, or science-outreach opportunity, please [get in touch](mailto:pardeep.iitb@gmail.com).
