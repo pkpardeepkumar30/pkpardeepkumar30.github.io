@@ -1,18 +1,18 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Curriculum Vitae
-description: Curriculum vitae of Pardeep Kumar, spanning web applications, scientific computing, and engineering software.
+# description: Curriculum vitae of Pardeep Kumar, spanning web applications, scientific computing, and engineering software.
 ---
 
-**Software Developer : Web Applications and Scientific Computing**  
+**Software Engineer | Scientific Computing | Simulation Tools | Web Development | Educator**  
 Amsterdam, the Netherlands  
-[Email](mailto:pardeep.iitb@gmail.com)
+[Email](mailto:pardeep.iitb@gmail.com) | [LinkedIn](https://www.linkedin.com/in/pkpardeepkumar30/)
 
 ## Summary
 
-Software developer with more than ten years of experience building reliable, efficient, and maintainable applications across web development, scientific computing, engineering software, and data-intensive systems.
+Software engineer with more than ten years of experience building reliable, efficient, and maintainable applications across scientific computing, engineering software, web development, and data-intensive systems.
 
-I develop full-stack web applications, scientific and engineering software, numerical simulation tools, and performance-critical systems. My experience spans energy, semiconductors, automotive engineering, finance, and computational physics, and I am comfortable adapting to different languages, frameworks, and technology stacks according to the needs of a project.
+I develop scientific and engineering software, numerical simulation tools, performance-critical systems and full-stack web applications. My experience spans energy, semiconductors, automotive engineering, finance, and computational physics, and I am comfortable adapting to different languages, frameworks, and technology stacks according to the needs of a project.
 
 I use AI-assisted development and prompt engineering to accelerate code exploration, implementation, testing, documentation, verification, and technical research. I am particularly interested in combining sound software-engineering practices with modern development tools to turn complex requirements into practical and accessible products.
 
