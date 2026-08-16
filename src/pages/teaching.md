@@ -12,7 +12,7 @@ After years of research and engineering, I have seen how often a difficult subje
 
 ## What I hope to teach
 
-My background is most directly suited to teaching following subjects to senior students (later four years of high school):
+My background is most directly suited to teaching at the senior-secondary level (generally ages 14–18): Grades 9–12 in India and the United States; IB MYP Years 4–5 and DP Years 1–2; UK Years 10–13 (GCSE and A-level); and the equivalent upper-secondary stage across Europe, where grade structures vary by country.
 
 - mathematics;
 - physics;
