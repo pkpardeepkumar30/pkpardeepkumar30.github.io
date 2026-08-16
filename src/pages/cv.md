@@ -49,7 +49,7 @@ I am open to software engineering, full-stack web development, scientific softwa
 
 ### WorkAtlas - project and knowledge workspace
 
-[Open WorkAtlas](https://workatlas-kappa.vercel.app/) · [Source github](https://github.com/pkpardeepkumar30/workatlas)
+[Open WorkAtlas](https://workatlas-kappa.vercel.app/) · [github](https://github.com/pkpardeepkumar30/workatlas)
 
 - Designed and developed a multi-user workspace for research, software, publications, experiments, projects, and tasks.
 - Built the full-stack application using Next.js, React, TypeScript, PostgreSQL, and Drizzle ORM.
