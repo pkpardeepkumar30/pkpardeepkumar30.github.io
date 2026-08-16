@@ -292,12 +292,12 @@ pre code {
 }
 
 .hero-tagline {
-  max-width: 16ch;
+  max-width: 29ch;
   margin: 1.5rem 0 1.75rem;
   color: var(--accent-strong);
-  font-size: clamp(1.55rem, 3.2vw, 2.45rem);
+  font-size: clamp(1.4rem, 2.3vw, 2.05rem);
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .hero .hero-lede {
