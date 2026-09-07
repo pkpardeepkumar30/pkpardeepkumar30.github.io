@@ -14,7 +14,7 @@ Scientific software engineer with more than ten years of experience developing n
 
 I work comfortably across mathematical formulation, algorithm design, implementation, profiling, testing, interoperability, and validation. Representative results include an approximately 30× faster thermodynamic optimisation formulation, a GPU-enabled workflow reduced from about 30 minutes to 15 seconds, and more than 15× higher throughput in a multi-client data workflow.
 
-My doctoral thesis was developed at [CWI Amsterdam](https://www.cwi.nl/en/) and [TU Delft](https://www.tudelft.nl/en/me/about/departments/process-energy) and has been submitted. I am interested in scientific-software, simulation, numerical-methods, performance-engineering, and research-software roles.
+My doctoral thesis was developed at [CWI Amsterdam](https://www.cwi.nl/en/) and [TU Delft](https://www.tudelft.nl/en/me/about/departments/process-energy) and has been submitted. This work brings together scientific software, simulation, numerical methods, performance engineering, and research software.
 
 ## Core expertise
 

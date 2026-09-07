@@ -237,12 +237,12 @@ def education_entry(degree, institution, dates, detail):
 
 def teaching_box():
     content = [
-        p("Teaching direction", BOX_HEADING),
+        p("Education and outreach", BOX_HEADING),
         p(
-            "I am preparing for a deliberate move toward high-school education. I want to help students approach mathematics and physics through careful questions, physical intuition, visual explanation, and small computational investigations.",
+            "My education interests focus on helping high-school students approach mathematics and physics through careful questions, physical intuition, visual explanation, and small computational investigations.",
             BOX_BODY,
         ),
-        bullet("Interested in high-school mathematics, physics, computational thinking, and science outreach.", BOX_BODY),
+        bullet("Topics include high-school mathematics, physics, computational thinking, and science outreach.", BOX_BODY),
         bullet("Able to connect classroom ideas to real examples from fluids, thermodynamics, electromagnetics, aerospace, and engineering.", BOX_BODY),
         bullet("Committed to treating questions and mistakes as useful parts of learning, while helping students learn how to test an argument.", BOX_BODY),
     ]
@@ -289,7 +289,7 @@ def build_teaching():
         rightMargin=19 * mm,
         topMargin=13 * mm,
         bottomMargin=15 * mm,
-        title="Pardeep Kumar - Scientific Computing Researcher and Aspiring Educator",
+        title="Pardeep Kumar - Scientific Computing Researcher - Education and Outreach",
         author="Pardeep Kumar",
         subject="Curriculum vitae",
         keywords="scientific computing, numerical methods, education, teaching, mathematics, physics",
@@ -308,7 +308,7 @@ def build_teaching():
 
     story = [
         p("Pardeep Kumar", NAME),
-        p("SCIENTIFIC COMPUTING RESEARCHER  |  NUMERICAL METHODS  |  ASPIRING EDUCATOR", ROLE),
+        p("SCIENTIFIC COMPUTING RESEARCHER  |  NUMERICAL METHODS  |  EDUCATION &amp; OUTREACH", ROLE),
         p(
             'Amsterdam, the Netherlands  |  +31 6 1311 9813  |  '
             '<link href="mailto:pardeep.iitb@gmail.com" color="#006D68">pardeep.iitb@gmail.com</link>  |  '
@@ -327,7 +327,7 @@ def build_teaching():
             'My research concerns robust numerical methods for multiphase thermodynamics and CO2-rich transport.',
         ),
         p(
-            "I am now exploring a serious transition toward high-school education. Teaching brings together the parts of research I value most: asking careful questions, making difficult ideas understandable, and helping someone gain the confidence to reason independently. I would bring broad examples, patient explanation, and an honest learning mindset to mathematics, physics, and computing education.",
+            "My interest in high-school education centres on the parts of research I value most: asking careful questions, making difficult ideas understandable, and helping others reason independently. My background supports clear explanations and computational examples in mathematics, physics, and computing education.",
         ),
         teaching_box(),
         section("Education"),
@@ -382,7 +382,7 @@ def build_teaching():
         ),
         PageBreak(),
         p("Pardeep Kumar", NAME),
-        p("SCIENTIFIC COMPUTING, ENGINEERING EXPERIENCE, AND SELECTED OUTPUT", ROLE),
+        p("SCIENTIFIC COMPUTING AND ENGINEERING EXPERIENCE", ROLE),
         section("Scientific computing strengths"),
     ]
 
@@ -492,13 +492,13 @@ def build_teaching():
                 "3. <b>P. Kumar</b>, B. Sanderse, P. I. Rosen Esquivel, and R. A. W. M. Henkes. A New Temperature Evolution Equation That Enforces Thermodynamic Vapour-Liquid Equilibrium in Multiphase Flows. <i>Computers &amp; Fluids</i>, 289, 106524, 2025.",
                 SMALL,
             ),
-            section("Web applications - secondary interest"),
+            section("Web applications"),
         ]
     )
 
     web_box = Table(
         [[p(
-            'I independently developed The Republic, Nazar India, Chess Duel, and WorkAtlas. The work demonstrates product thinking and self-directed learning, while remaining secondary to my scientific-computing and teaching direction. '
+            'I independently developed The Republic, Nazar India, Chess Duel, and WorkAtlas. The work demonstrates product thinking, full-stack delivery, and self-directed learning alongside my scientific-computing and education interests. '
             '<link href="https://pkpardeepkumar30.github.io/web/" color="#006D68"><b>View web application experience</b></link>',
             BOX_BODY,
         )]],

@@ -4,15 +4,15 @@ title: Teaching
 description: Pardeep Kumar's developing approach to teaching high-school mathematics, physics, and computational thinking.
 ---
 
-I am currently exploring how I can contribute to teaching high-school students. Teaching is not an afterthought or a temporary alternative for me: it is a direction I care about and want to develop seriously.
+My interest in education focuses on helping high-school students engage with mathematics, physics, and computational thinking. I approach teaching with the same curiosity, clarity, and discipline that guide my research and engineering work.
 
-After years of research and engineering, I have seen how often a difficult subject becomes approachable when someone finds the right question, example, diagram, or experiment. I would like to help young people experience that moment—especially in subjects that can otherwise feel abstract or intimidating.
+Years of research and engineering have shown me how often a difficult subject becomes approachable through the right question, example, diagram, or experiment. I am especially interested in making abstract or intimidating subjects clearer through physical intuition, visual explanation, and computation.
 
 [Download teaching résumé](../cv/Resume_Pardeep_Kumar_Teaching.pdf)
 
-## What I hope to teach
+## Subjects and levels
 
-My background is most directly suited to teaching at the senior-secondary level (generally ages 14–18): Grades 9–12 in India and the United States; IB MYP Years 4–5 and DP Years 1–2; UK Years 10–13 (GCSE and A-level); and the equivalent upper-secondary stage across Europe, where grade structures vary by country.
+My background most directly supports senior-secondary material (generally ages 14–18): Grades 9–12 in India and the United States; IB MYP Years 4–5 and DP Years 1–2; UK Years 10–13 (GCSE and A-level); and the equivalent upper-secondary stage across Europe, where grade structures vary by country.
 
 - mathematics;
 - physics;
@@ -43,10 +43,8 @@ I completed Graduate School courses that strengthen the communication, judgement
 - Embedding Societal Values in Research;
 - Scientific Integrity.
 
-## My current direction
+## Education and outreach interests
 
-I have submitted my doctoral thesis and am now preparing for the next stage of my career. I am looking for opportunities to learn from experienced educators, contribute to school or outreach settings, and develop clear lessons and computational demonstrations for high-school students.
+Alongside my research and engineering work, I develop ways to explain mathematics, physics, and computation through clear lessons, visual examples, and computational demonstrations for high-school audiences.
 
-<!-- I do not present this page as a record of classroom experience I have not yet had. It is a statement of intent, the relevant experience I bring, and the kind of educator I am working to become. -->
-
-If you would like to discuss a teaching, school, or science-outreach opportunity, please [get in touch](mailto:pardeep.iitb@gmail.com).
+If you would like to discuss mathematics, physics, computational education, or science outreach, please [get in touch](mailto:pardeep.iitb@gmail.com).
