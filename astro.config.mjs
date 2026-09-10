@@ -4,17 +4,10 @@ import { unified } from '@astrojs/markdown-remark';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
-const [owner, repository] = (process.env.GITHUB_REPOSITORY ?? '').split('/');
-const isUserSite = repository === `${owner}.github.io`;
-const inferredSite = owner && repository
-  ? `https://${owner}.github.io`
-  : 'https://example.com';
-const inferredBase = owner && repository && !isUserSite ? `/${repository}` : '/';
-
 export default defineConfig({
   output: 'static',
-  site: process.env.SITE_URL ?? inferredSite,
-  base: process.env.SITE_BASE ?? inferredBase,
+  site: process.env.SITE_URL ?? 'https://kumarpardeep.com',
+  base: process.env.SITE_BASE ?? '/',
   trailingSlash: 'always',
   integrations: [
     sitemap({
