@@ -23,7 +23,7 @@ from reportlab.platypus import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CV_DIR = ROOT / "public" / "cv"
+CV_DIR = ROOT / "archive" / "resumes"
 SOFTWARE_OUTPUT = CV_DIR / "Resume_Pardeep_Kumar_Software.pdf"
 WEB_OUTPUT = CV_DIR / "Resume_Pardeep_Kumar_Web.pdf"
 TEACHING_OUTPUT = CV_DIR / "Resume_Pardeep_Kumar_Teaching.pdf"

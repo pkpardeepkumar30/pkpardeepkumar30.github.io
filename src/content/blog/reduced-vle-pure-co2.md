@@ -214,10 +214,6 @@ Because a finite interval of characteristic speeds is skipped by the sound-speed
 
 The same mechanism can be read in thermodynamic space. In the $p$–$T$ plane the expansion reaches the saturation line and follows it. In the $p$–$v$ plane the isentrope develops a kink at the phase boundary; since the isentropic slope determines sound speed, that kink explains the acoustic discontinuity.
 
-<!-- <figure class="research-figure">
-  <img src="../../images/blog/reduced-vle/thermodynamic-paths.png" alt="Pressure-temperature and pressure-volume trajectories through a phase transition" loading="lazy" />
-  <figcaption>The same Riemann solution viewed in thermodynamic coordinates.</figcaption>
-</figure> -->
 
 <figure class="research-figure">
   <div class="figure-panel-grid">

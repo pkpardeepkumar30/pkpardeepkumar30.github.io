@@ -1,6 +1,7 @@
 ---
 import 'katex/dist/katex.min.css';
 import '../styles/global.css';
+import '../styles/founder.css';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { siteConfig } from '../site.config';
@@ -16,7 +17,7 @@ interface Props {
 const {
   title = siteConfig.title,
   description = siteConfig.description,
-  image = 'og-default.svg',
+  image = 'og-default.png',
   article = false,
   className = ''
 } = Astro.props;
@@ -43,12 +44,7 @@ const structuredData = {
       name: siteConfig.name,
       url: Astro.site,
       image: profileURL,
-      jobTitle: 'Scientific software engineer and numerical methods researcher',
-      affiliation: siteConfig.affiliations.map(({ name, href }) => ({
-        '@type': 'Organization',
-        name,
-        url: href
-      })),
+      jobTitle: 'Education founder and builder',
       sameAs: siteConfig.social
         .filter(({ href }) => href.startsWith('https://'))
         .map(({ href }) => href)
@@ -66,8 +62,8 @@ const structuredData = {
     <meta name="description" content={description} />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
-    <meta name="theme-color" content="#f7f5ef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#101513" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141d19" media="(prefers-color-scheme: dark)" />
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
     <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS`} href={`${base}rss.xml`} />
@@ -86,10 +82,12 @@ const structuredData = {
     <title>{fullTitle}</title>
 
     <script is:inline>
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light' || savedTheme === 'dark') {
-        document.documentElement.dataset.theme = savedTheme;
-      }
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch { /* The site remains usable when browser storage is disabled. */ }
     </script>
     <slot name="head" />
   </head>
@@ -107,7 +105,8 @@ const structuredData = {
           <span aria-hidden="true">×</span>
         </button>
         <p class="eyebrow">Get in touch</p>
-        <h2 id="contact-dialog-title">Send me a message</h2>
+        <h2 id="contact-dialog-title">Let’s start a conversation.</h2>
+        <p>Tell me a little about yourself and your interest in education, teaching, or working together.</p>
         
         <a
           class="contact-email-address"
@@ -117,6 +116,7 @@ const structuredData = {
           {siteConfig.email}
         </a>
         <div class="contact-dialog-actions">
+          <a class="button-link" href={`mailto:${siteConfig.email}`} data-email-direct data-email-compose>Open email app ↗</a>
           <button class="button-link contact-copy-button" type="button" data-copy-email>
             Copy email
           </button>          
@@ -131,6 +131,8 @@ const structuredData = {
       const copyButton = dialog?.querySelector('[data-copy-email]');
       const copyStatus = dialog?.querySelector('.contact-copy-status');
       const emailAddress = dialog?.querySelector('.contact-email-address');
+      const composeLink = dialog?.querySelector('[data-email-compose]');
+      let contactTrigger = null;
 
       document.addEventListener('click', (event) => {
         const link = event.target instanceof Element
@@ -143,6 +145,9 @@ const structuredData = {
 
         if (dialog instanceof HTMLDialogElement && typeof dialog.showModal === 'function') {
           event.preventDefault();
+          contactTrigger = link;
+          if (composeLink instanceof HTMLAnchorElement) composeLink.href = link.href;
+          if (emailAddress instanceof HTMLAnchorElement) emailAddress.href = link.href;
           if (copyStatus) copyStatus.textContent = '';
           dialog.showModal();
         }
@@ -151,6 +156,8 @@ const structuredData = {
       closeButton?.addEventListener('click', () => {
         if (dialog instanceof HTMLDialogElement) dialog.close();
       });
+
+      dialog?.addEventListener('close', () => contactTrigger?.focus());
 
       dialog?.addEventListener('click', (event) => {
         if (event.target === dialog && dialog instanceof HTMLDialogElement) dialog.close();

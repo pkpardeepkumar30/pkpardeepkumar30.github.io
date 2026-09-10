@@ -1,54 +1,47 @@
 ---
 import { siteConfig } from '../site.config';
-
 const base = import.meta.env.BASE_URL;
-const withBase = (path: string) => `${base}${path.replace(/^\/+/, '')}`;
-const currentPath = Astro.url.pathname.startsWith(base)
-  ? `/${Astro.url.pathname.slice(base.length)}`
-  : Astro.url.pathname;
-const navigation = siteConfig.navigation.filter((item) => item.enabled);
+const currentPath = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.slice(base.length) : Astro.url.pathname;
 ---
-
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="wordmark" href={withBase('')} aria-label={`${siteConfig.name}, home`}>
-      <span class="wordmark-mark" aria-hidden="true">{siteConfig.shortName}</span>
-      <span>{siteConfig.name}</span>
-    </a>
-
-    <nav aria-label="Primary navigation">
-      <ul class="nav-list">
-        {navigation.map((item) => {
-          const itemPath = item.href ? `/${item.href}` : '/';
-          const isActive = item.href
-            ? currentPath.startsWith(itemPath)
-            : currentPath === '/' || currentPath === '//';
-          return (
-            <li>
-              <a href={withBase(item.href)} aria-current={isActive ? 'page' : undefined}>
-                {item.label}
-              </a>
-            </li>
-          );
-        })}
-      </ul>
+    <a class="wordmark" href={base} aria-label={`${siteConfig.name}, home`}><span class="wordmark-mark" aria-hidden="true">PK<span>.</span></span><span>{siteConfig.name}</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="primary-navigation" aria-label="Primary navigation">
+      <ul class="nav-list">{siteConfig.navigation.filter(item => item.enabled).map(item => <li><a href={`${base}${item.href}`} aria-current={(item.href ? currentPath.startsWith(item.href) : currentPath === '') ? 'page' : undefined}>{item.label}</a></li>)}</ul>
     </nav>
-
-    <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
-      <span class="theme-icon" aria-hidden="true">◐</span>
-    </button>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"/></svg></button>
+      <a class="header-contact" href={`${base}#connect`}>Let’s connect <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </header>
-
 <script>
-  const button = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  const themeButton = document.querySelector<HTMLButtonElement>('.theme-toggle');
   const root = document.documentElement;
-
-  button?.addEventListener('click', () => {
-    const current = root.dataset.theme
-      ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  themeButton?.addEventListener('click', () => {
+    const current = root.dataset.theme ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     const next = current === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
-    localStorage.setItem('theme', next);
+    try { localStorage.setItem('theme', next); } catch { /* Theme changes still work without storage. */ }
+  });
+  const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
+  const navigation = document.querySelector<HTMLElement>('#primary-navigation');
+  const mobile = window.matchMedia('(max-width: 800px)');
+  const setMenu = (open: boolean) => {
+    menuButton?.setAttribute('aria-expanded', String(open));
+    if (navigation) navigation.hidden = mobile.matches && !open;
+  };
+  if (menuButton) menuButton.hidden = false;
+  setMenu(false);
+  menuButton?.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+  mobile.addEventListener('change', () => setMenu(false));
+  navigation?.addEventListener('click', (event) => {
+    if (event.target instanceof Element && event.target.closest('a')) setMenu(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && mobile.matches && menuButton?.getAttribute('aria-expanded') === 'true') {
+      setMenu(false); menuButton.focus();
+    }
   });
 </script>

@@ -18,7 +18,7 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !page.endsWith('/projects/') && !page.endsWith('/cv/')
+      filter: (page) => !['/projects/', '/cv/', '/teaching/'].some((path) => page.endsWith(path))
     })
   ],
   markdown: {

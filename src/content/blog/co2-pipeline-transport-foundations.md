@@ -20,7 +20,7 @@ This article introduces that coupled problem, using the water-hammer case and th
 CCS is intended especially for emissions that are difficult to eliminate directly, including those from cement, steel, chemicals, and other energy-intensive industries. CO₂ is separated from an industrial stream, conditioned, moved to a storage site, and injected into a suitable geological formation. Transport connects geographically distributed emitters to storage capacity and therefore determines whether a regional CCS network can operate as one system.
 
 <figure class="research-figure">
-  <img src="../../images/blog/co2-transport-foundations/CCSImage.pdf" alt="Illustration of carbon capture, pipeline and ship transport, and geological storage" loading="lazy" />
+  <img src="../../images/blog/co2-transport-foundations/CCSImage.png" alt="Illustration of carbon capture, pipeline and ship transport, and geological storage" loading="lazy" />
   <figcaption>The CCS chain from industrial sources to geological storage. Original illustration credited to the IPCC.</figcaption>
 </figure>
 

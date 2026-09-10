@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ConnectCards from '../components/ConnectCards.astro';
+---
+<BaseLayout title="Building in education" description="Pardeep Kumar is building a school in India and connecting with education investors, exceptional teachers, and education partners." className="page-main education-page">
+  <div class="shell">
+    <header class="page-heading"><p class="eyebrow">Education / India</p><h1>Good teaching.<br /><em>Lasting impact.</em></h1><p class="lede">I’m building a school in India with a simple conviction: the quality of an education begins with the people who make it happen.</p></header>
+    <div class="education-intro"><p>My background is in engineering, research, and building software. My next chapter brings that experience to a more personal ambition: creating a school where students learn to think clearly, ask questions, and build confidence in their own abilities.</p><p>I’m at the stage of connecting with investors, educators, and prospective teachers who share a serious, long-term interest in education in India.</p></div>
+    <section class="education-principles" aria-labelledby="principles-title"><p class="eyebrow">What matters to me</p><h2 id="principles-title">The foundations of a good school.</h2><div class="principle-grid">
+      <article><span>01</span><h3>Excellent teachers</h3><p>People who know their subject, explain it clearly, and care about the progress of every student. Strong teaching is central to the school I want to build.</p></article>
+      <article><span>02</span><h3>Real understanding</h3><p>Learning that connects ideas to the world. Questions, experiments, discussion, and thoughtful practice can help students understand why something works.</p></article>
+      <article><span>03</span><h3>A long-term commitment</h3><p>A school earns trust through its everyday work. I want to build with people who value consistency, responsibility, and the quality of the learning experience.</p></article>
+    </div></section>
+    <section class="education-connections" id="connect" aria-labelledby="education-connect-title"><div class="connect-heading"><h2 id="education-connect-title">Let’s build<br /><em>the right connections.</em></h2><p>I welcome introductions from investors interested in Indian education, high-quality teachers, and people with experience in schools.</p></div><ConnectCards /></section>
+  </div>
+</BaseLayout>

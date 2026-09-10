@@ -31,9 +31,9 @@ const { project, detailed = false } = Astro.props;
     {detailed && <p class="project-details">{project.details}</p>}
   </div>
 
-  <ul class="project-stack" aria-label={`${project.title} technologies`}>
+  {detailed && <ul class="project-stack" aria-label={`${project.title} technologies`}>
     {project.stack.map((technology) => <li>{technology}</li>)}
-  </ul>
+  </ul>}
 
   <div class="project-links">
     {project.live && (

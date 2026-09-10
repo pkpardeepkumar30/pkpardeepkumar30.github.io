@@ -1,41 +1,20 @@
 export const siteConfig = {
   name: 'Pardeep Kumar',
   shortName: 'PK',
-  title: 'Pardeep Kumar | Scientific Software Engineer',
-  description:
-    'Scientific software engineering, numerical methods, high-performance computing, and independent web applications.',
+  title: 'Pardeep Kumar | Education Founder & Builder',
+  description: 'Building a school in India. Pardeep Kumar welcomes conversations with investors in Indian education, excellent teachers, and education partners.',
   email: 'pardeep.iitb@gmail.com',
-  location: 'Amsterdam, The Netherlands',
-  affiliations: [
-    { name: 'CWI Amsterdam', href: 'https://www.cwi.nl/' },
-    { name: 'TU Delft', href: 'https://www.tudelft.nl/' }
-  ],
   navigation: [
     { label: 'Home', href: '', enabled: true },
-    { label: 'Research', href: 'research/', enabled: true },
-    { label: 'Publications', href: 'publications/', enabled: true },
-    { label: 'Software', href: 'software/', enabled: true },
-    { label: 'Web', href: 'web/', enabled: true },
-    { label: 'Teaching', href: 'teaching/', enabled: true },
-    { label: 'Blog', href: 'blog/', enabled: true },
-    { label: 'Talks', href: 'talks/', enabled: false },
+    { label: 'Education', href: 'education/', enabled: true },
+    { label: 'About', href: 'about/', enabled: true },
+    { label: 'Ventures', href: 'web/', enabled: true },
+    { label: 'Writing', href: 'blog/', enabled: true }
   ],
   social: [
     { label: 'Email', href: 'mailto:pardeep.iitb@gmail.com' },
-    {
-      label: 'Google Scholar',
-      href: 'https://scholar.google.com/citations?hl=en&user=th4w0rYAAAAJ'
-    },
-    {
-      label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/pkpardeepkumar30/'
-    },
-    {
-      label: 'ResearchGate',
-      href: 'https://www.researchgate.net/profile/Pardeep-Kumar-87?ev=hdr_xprf'
-    },
-    // Add your real profile URLs when ready; empty links are not displayed.
-    { label: 'ORCID', href: '' },
-    { label: 'GitHub', href: 'https://github.com/pkpardeepkumar30' }
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pkpardeepkumar30/' },
+    { label: 'GitHub', href: 'https://github.com/pkpardeepkumar30' },
+    { label: 'Google Scholar', href: 'https://scholar.google.com/citations?hl=en&user=th4w0rYAAAAJ' }
   ]
 } as const;
