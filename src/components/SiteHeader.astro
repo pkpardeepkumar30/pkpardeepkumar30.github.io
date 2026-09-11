@@ -5,7 +5,7 @@ const currentPath = Astro.url.pathname.startsWith(base) ? Astro.url.pathname.sli
 ---
 <header class="site-header">
   <div class="shell header-inner">
-    <a class="wordmark" href={base} aria-label={`${siteConfig.name}, home`}><span class="wordmark-mark" aria-hidden="true">PK<span></span></span><span>{siteConfig.name}</span></a>
+    <a class="wordmark" href={base} aria-label={`${siteConfig.name}, home`}><span class="wordmark-mark" aria-hidden="true">PK<span></span></span><span></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>Menu <span aria-hidden="true">☰</span></button>
     <nav id="primary-navigation" aria-label="Primary navigation">
       <ul class="nav-list">{siteConfig.navigation.filter(item => item.enabled).map(item => <li><a href={`${base}${item.href}`} aria-current={(item.href ? currentPath.startsWith(item.href) : currentPath === '') ? 'page' : undefined}>{item.label}</a></li>)}</ul>
