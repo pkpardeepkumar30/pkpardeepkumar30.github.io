@@ -29,7 +29,7 @@ For multicomponent mixtures, I reformulated the UVN-flash in \(T\)-\(V\)-\(\math
 
 Selected publications:
 
-- [A new temperature evolution equation that enforces thermodynamic vapour–liquid equilibrium in multiphase flows — application to CO₂ modelling](https://doi.org/10.1016/j.compfluid.2024.106524)
+- [A new temperature evolution equation that enforces thermodynamic vapour–liquid equilibrium in multiphase flows : application to CO₂ modelling](https://doi.org/10.1016/j.compfluid.2024.106524)
 - [Solving the UVN-flash problem in TVN-space](https://doi.org/10.1016/j.fluid.2025.114528)
 - [A reformulation of UVN-flash for multicomponent two-phase systems with application to CO2-rich mixture transport in pipelines](https://doi.org/10.1016/j.compfluid.2026.107108)
 
@@ -55,7 +55,7 @@ Related publication:
 
 ## Computational electromagnetics {#computational-electromagnetics}
 
-My work in computational electromagnetics is based on the finite-volume time-domain method for Maxwell's equations. Maxwell's curl equations form a hyperbolic wave system, allowing ideas from computational fluid dynamics—characteristic decomposition, upwind fluxes, finite-volume balance laws, and explicit time integration—to be applied to electromagnetic propagation and scattering.
+My work in computational electromagnetics is based on the finite-volume time-domain method for Maxwell's equations. Maxwell's curl equations form a hyperbolic wave system, allowing ideas from computational fluid dynamics: characteristic decomposition, upwind fluxes, finite-volume balance laws, and explicit time integration, to be applied to electromagnetic propagation and scattering.
 
 My master's research developed and assessed a characteristic FVTD solver in C++. The work progressed from one-dimensional wave propagation and material-interface problems to two-dimensional scattering on body-fitted meshes.
 

@@ -598,7 +598,7 @@ Before presenting results, the most important implementation audit is conceptual
 
 ## Further reading
 
-- [Baumgarte and Shapiro: *On the Numerical Integration of Einstein’s Field Equations*](https://arxiv.org/abs/gr-qc/9810065) — the conformal-traceless formulation that established the modern BSSN structure.
-- [Alic et al.: *Conformal and covariant formulation of the Z4 system with constraint-violation damping*](https://arxiv.org/abs/1106.2254) — the CCZ4 formulation.
-- [Dumbser et al.: *Conformal and covariant Z4 formulation: strongly hyperbolic first-order reduction and solution with discontinuous Galerkin schemes*](https://arxiv.org/abs/1707.09910) — the 58-variable FO-CCZ4 system.
-- [Einstein Toolkit ADMBase documentation](https://docs.einsteintoolkit.org/et-docs/Einstein_Toolkit_standards) — the standard interchange variables $\gamma_{ij}$, $K_{ij}$, $\alpha$, and $\beta^i$ used by numerical-relativity software.
+- [Baumgarte and Shapiro: *On the Numerical Integration of Einstein’s Field Equations*](https://arxiv.org/abs/gr-qc/9810065) : the conformal-traceless formulation that established the modern BSSN structure.
+- [Alic et al.: *Conformal and covariant formulation of the Z4 system with constraint-violation damping*](https://arxiv.org/abs/1106.2254) : the CCZ4 formulation.
+- [Dumbser et al.: *Conformal and covariant Z4 formulation: strongly hyperbolic first-order reduction and solution with discontinuous Galerkin schemes*](https://arxiv.org/abs/1707.09910) : the 58-variable FO-CCZ4 system.
+- [Einstein Toolkit ADMBase documentation](https://docs.einsteintoolkit.org/et-docs/Einstein_Toolkit_standards) : the standard interchange variables $\gamma_{ij}$, $K_{ij}$, $\alpha$, and $\beta^i$ used by numerical-relativity software.

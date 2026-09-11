@@ -179,7 +179,7 @@ Q_A(\mathbf x)=
 }
 $$
 
-—the Helmholtz-energy Q-function associated with the constrained problem. The published formulation denotes it $A_CQ$. It has the form introduced by Michelsen, but here it emerges directly from one Lagrange multiplier in TVN space.
+the Helmholtz-energy Q-function associated with the constrained problem. The published formulation denotes it $A_CQ$. It has the form introduced by Michelsen, but here it emerges directly from one Lagrange multiplier in TVN space.
 
 The entropy form and Helmholtz form are mathematically equivalent. The Helmholtz form is cheaper to evaluate because it needs $A$ for each phase rather than separate evaluations of $S$ and $U$.
 
@@ -248,7 +248,7 @@ Absolute timings depend on implementation, derivatives, solver settings, and har
 
 TVN variables are also naturally better scaled. Temperatures usually remain on the order of hundreds of kelvin, whereas internal energies can be large, negative, or positive depending on the reference convention. This does not eliminate all scaling concerns, but it avoids one particularly awkward variable.
 
-## What this formulation does—and does not—solve
+## What this formulation does and does not solve
 
 The reformulation provides an efficient equilibrium calculation once an appropriate phase count and initial guess are available. It does not make phase stability trivial, guarantee convergence from arbitrary guesses, or remove the need for phase appearance and disappearance logic. Near critical points, small phase fractions, nearly singular Hessians, and flat thermodynamic directions can still challenge a nonlinear solver.
 

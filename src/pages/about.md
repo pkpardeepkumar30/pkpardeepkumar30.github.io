@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: A builder, by instinct.
-description: I’m Pardeep Kumar—an education founder with a background in engineering, research, and turning ideas into working products.
+description: I’m Pardeep Kumar: an educationist with a background in engineering, research, and turning ideas into working products.
 ---
 
 My current focus is building a school in India. I want to bring together excellent teachers, thoughtful education partners, and investors who share a long-term interest in the quality of education.
