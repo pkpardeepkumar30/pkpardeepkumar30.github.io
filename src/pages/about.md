@@ -12,7 +12,7 @@ I trained in aerospace engineering at IIT Bombay, completing my MSc in 2014. My 
 
 Over more than ten years, I have worked across energy, semiconductors, engineering software, finance, and scientific research. That journey includes Fluidyn, Altair, KLA-Tencor, Aakraya Research, Shell, and ASM International.
 
-My doctoral research at CWI Amsterdam and TU Delft focused on scientific computing and numerical methods. My thesis has been submitted; the degree has not yet been awarded. This work strengthened habits I value in any endeavour: making assumptions explicit, testing ideas carefully, and following through on difficult problems.
+My doctoral research at CWI Amsterdam and TU Delft focused on scientific computing and numerical methods. My thesis has been submitted and approved; defense is scheduled in January 2027 at TU Delft. This work strengthened habits I value in any endeavour: making assumptions explicit, testing ideas carefully, and following through on difficult problems.
 
 ## From ideas to execution
 
