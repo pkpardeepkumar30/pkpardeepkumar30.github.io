@@ -30,14 +30,24 @@ const principles = [
   },
   {
     number: '06',
+    title: 'The subjects not on the timetable',
+    body: 'Arguing a point and being argued with. Working in a group. Standing on a stage. Making a case to a room. Playing a sport and losing well. Civic sense. Noticing where another person’s boundary is. Paying attention to your own attention. None of this is an extra.'
+  },
+  {
+    number: '07',
+    title: 'Taught at ten, not at thirty',
+    body: 'These are handed out as professional-development courses to adults who are already halfway through their careers — fast, late, and to people whose habits have set. A child has years to practise, and practice at that age is cheap.'
+  },
+  {
+    number: '08',
     title: 'For every child, not a few',
-    body: 'This kind of education is usually sold at a price that sorts children by their parents’ income. I do not think inquiry, curiosity, and careful teaching are expensive by nature. They are simply rationed.'
+    body: 'This kind of education is usually sold at a price that sorts children by their parents’ income, and it thins out sharply the further you get from a metro. I do not think inquiry, curiosity, and careful teaching are expensive by nature. They are simply rationed.'
   }
 ];
 ---
 <BaseLayout
   title="What I believe about learning"
-  description="Curiosity, inquiry, and learning how to learn — and why a good education should not depend on what a child’s family can afford."
+  description="Curiosity, inquiry, and learning how to learn — and why the skills a person actually lives by should not depend on what a child’s family can afford."
   className="page-main education-page"
 >
   <div class="shell">
@@ -45,8 +55,8 @@ const principles = [
       <p class="eyebrow">What I believe</p>
       <h1>Curiosity, inquiry,<br /><em>and learning how to learn.</em></h1>
       <p class="lede">
-        A set of convictions about how children learn, and why the best of it should not be reserved
-        for the families who can already pay for it.
+        A set of convictions about how children learn, what schooling leaves out, and why the best of
+        it should not be reserved for the families who can already pay for it.
       </p>
     </header>
 
@@ -55,18 +65,20 @@ const principles = [
         I came to these beliefs the long way round — through mathematics, physics, and computation,
         where you cannot fake understanding for very long. The subjects were unforgiving, and that
         turned out to be a gift: I learned that being confused is the start of the work, not evidence
-        that you are bad at it.
+        that you are bad at it. What took longer to notice was everything my own schooling never got
+        round to, and how much of it I ended up assembling late and in public.
       </p>
       <p>
         School is where most children decide whether they are “a maths person” or not, whether
-        questions are welcome, whether being wrong is safe. Those decisions tend to stick. That is why
-        school education, rather than anything later, is where I want to spend the next part of my life.
+        questions are welcome, whether being wrong is safe, whether their voice is worth raising in a
+        room. Those decisions tend to stick. That is why school education, rather than anything later,
+        is where I want to spend the next part of my life.
       </p>
     </div>
 
     <section class="education-principles" aria-labelledby="principles-title">
       <p class="eyebrow">The convictions</p>
-      <h2 id="principles-title">Six things I keep coming back to.</h2>
+      <h2 id="principles-title">Eight things I keep coming back to.</h2>
       <div class="principle-grid">
         {principles.map((principle) => (
           <article>
