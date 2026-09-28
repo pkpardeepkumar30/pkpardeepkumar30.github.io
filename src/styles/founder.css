@@ -43,6 +43,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); flex: 0 0 auto; }
 .founder-hero h1 { margin: 0; font-size: clamp(3.1rem, 5.5vw, 5.15rem); line-height: 1.08; letter-spacing: -.05em; font-weight: 400; }
 .founder-lede { max-width: 31rem; color: var(--muted); font-size: 1rem; margin: 1.8rem 0 0; line-height: 1.8; }
+.founder-statement { max-width: 32rem; margin: 1.6rem 0 0; font-family: var(--serif); font-size: clamp(1.15rem, 1.7vw, 1.45rem); line-height: 1.45; letter-spacing: -.015em; color: var(--ink); }
 .hero-actions { flex-wrap: wrap; gap: 1.6rem; margin-top: 2rem; }
 .button-link { gap: 1.5rem; border-radius: 4px; font-size: .75rem; font-weight: 500; padding: .9rem 1.25rem; }
 .text-link { font-size: .76rem; font-weight: 500; }
@@ -96,7 +97,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .connect-card:hover { background: var(--surface); border-color: var(--accent); }
 .connect-topline { display: flex; justify-content: space-between; gap: .5rem; font-size: .59rem; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
 .connect-topline span:last-child { color: var(--muted); }
-.connect-card h3 { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; letter-spacing: -.035em; line-height: 1.2; margin: 2.7rem 0 1rem; }
+.connect-card h2, .connect-card h3 { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; letter-spacing: -.035em; line-height: 1.2; margin: 2.7rem 0 1rem; }
 .connect-card > p { color: var(--muted); font-size: .8rem; margin: 0 0 2rem; }
 .connect-card .text-link { display: flex; justify-content: space-between; margin-top: auto; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .7rem; }
 .site-footer { background: var(--surface); }
@@ -169,7 +170,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .connect-heading { margin-top: 2.5rem; gap: 0; }
   .connect-grid, .principle-grid { grid-template-columns: 1fr; gap: 1rem; }
   .connect-card { padding: 1.8rem; }
-  .connect-card h3 { margin-top: 1.7rem; font-size: 1.9rem; }
+  .connect-card h2, .connect-card h3 { margin-top: 1.7rem; font-size: 1.9rem; }
   .connect-card > p { font-size: .9rem; }
   .connect-card .text-link { font-size: .8rem; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 2.5rem 1rem; }

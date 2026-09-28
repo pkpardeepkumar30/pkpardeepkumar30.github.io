@@ -44,7 +44,8 @@ const structuredData = {
       name: siteConfig.name,
       url: Astro.site,
       image: profileURL,
-      jobTitle: 'Education founder and builder',
+      jobTitle: 'Engineer and researcher',
+      description: siteConfig.description,
       sameAs: siteConfig.social
         .filter(({ href }) => href.startsWith('https://'))
         .map(({ href }) => href)
@@ -73,7 +74,11 @@ const structuredData = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:image" content={imageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${siteConfig.name} : curiosity-driven school education`} />
     <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
@@ -106,7 +111,7 @@ const structuredData = {
         </button>
         <p class="eyebrow">Get in touch</p>
         <h2 id="contact-dialog-title">Let’s start a conversation.</h2>
-        <p>Tell me a little about yourself and your interest in education, teaching, or working together.</p>
+        <p>Tell me who you are and what you care about in school education. I read everything that arrives.</p>
         
         <a
           class="contact-email-address"

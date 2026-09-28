@@ -11,7 +11,21 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [
     sitemap({
-      filter: (page) => !['/projects/', '/cv/', '/teaching/'].some((path) => page.endsWith(path))
+      // Redirect stubs and the unlinked background pages stay out of the sitemap.
+      filter: (page) =>
+        ![
+          '/about/',
+          '/blog/',
+          '/cv/',
+          '/education/',
+          '/projects/',
+          '/publications/',
+          '/research/',
+          '/software/',
+          '/talks/',
+          '/teaching/',
+          '/web/'
+        ].some((path) => page.endsWith(path)) && !page.includes('/blog/')
     })
   ],
   markdown: {

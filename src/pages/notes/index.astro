@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const posts = (await getCollection('blog', ({ data }) => import.meta.env.DEV || !data.draft))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+const dateFormatter = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+---
+
+<BaseLayout
+  title="Notes"
+  description="Notes by Pardeep Kumar on curiosity, inquiry-led learning, and the research and engineering work that shaped how he thinks about teaching."
+  className="page-main"
+>
+  <div class="shell">
+    <header class="page-heading">
+      <p class="eyebrow">Notes</p>
+      <h1>Thinking<br /><em>out loud.</em></h1>
+      <p class="lede">
+        Short pieces on curiosity and how children learn, alongside longer notes from the research and
+        engineering work that shaped the way I think.
+      </p>
+    </header>
+
+    {posts.length > 0 ? (
+      <ol class="post-list">
+        {posts.map((post) => (
+          <li>
+            <article>
+              <p class="post-meta">
+                <time datetime={post.data.published.toISOString()}>
+                  {dateFormatter.format(post.data.published)}
+                </time>
+              </p>
+              <h2><a href={`${base}notes/${post.id}/`}>{post.data.title}</a></h2>
+              <p>{post.data.description}</p>
+              {post.data.tags.length > 0 && (
+                <ul class="tag-list" aria-label="Tags">
+                  {post.data.tags.map((tag) => <li>{tag}</li>)}
+                </ul>
+              )}
+            </article>
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <div class="empty-state">
+        <h2>Notes are coming soon.</h2>
+        <p>
+          Add a Markdown file in <code>src/content/blog/</code> to publish the first note.
+        </p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
