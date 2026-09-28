@@ -26,6 +26,6 @@ I also design and develop complete web products, from the user experience and ap
 
 ## What I bring to the next chapter
 
-Engineering has taught me to work across disciplines, balance detail with the larger purpose, and build things that can be tested and improved. I bring those habits to my current focus: building a school in India with strong people and a commitment to quality.
+Engineering has taught me to work across disciplines, balance detail with the larger purpose, and build things that can be tested and improved. Those are the habits I now want to bring to school education.
 
-[My education focus](../education/) · [More about me](../about/)
+[What I believe about learning](../what-i-believe/) · [My story](../my-story/)

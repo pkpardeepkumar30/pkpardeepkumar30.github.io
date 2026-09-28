@@ -6,10 +6,10 @@ const linkedIn = siteConfig.social.find(item => item.label === 'LinkedIn')!;
 ---
 <footer class="site-footer">
   <div class="shell footer-top">
-    <div><a class="footer-name" href={base}>{siteConfig.name}<span>.</span></a><p>Building with purpose.<br />Education. Enterprise. Possibility.</p></div>
-    <div class="footer-link-group"><span>Explore</span><a href={`${base}education/`}>Education</a><a href={`${base}about/`}>About</a><a href={`${base}web/`}>Ventures</a></div>
-    <div class="footer-link-group"><span>Ideas &amp; background</span><a href={`${base}blog/`}>Writing</a><a href={`${base}research/`}>Research</a><a href={`${base}publications/`}>Publications</a></div>
-    <div class="footer-link-group"><span>Start a conversation</span><a href={`mailto:${siteConfig.email}`}>Email me ↗</a><a href={linkedIn.href} target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    <div><a class="footer-name" href={base}>{siteConfig.name}<span>.</span></a><p>Curiosity. Inquiry.<br />Learning how to learn.</p></div>
+    <div class="footer-link-group"><span>Explore</span><a href={`${base}my-story/`}>My story</a><a href={`${base}what-i-believe/`}>What I believe</a><a href={`${base}notes/`}>Notes</a><a href={`${base}contact/`}>Contact</a></div>
+    <div class="footer-link-group"><span>Background</span><a href={`${base}software/`}>Engineering</a><a href={`${base}research/`}>Research</a><a href={`${base}publications/`}>Publications</a><a href={`${base}talks/`}>Talks</a><a href={`${base}web/`}>Independent products</a></div>
+    <div class="footer-link-group"><span>Start a conversation</span><a href={`mailto:${siteConfig.email}`}>Email me ↗</a><a href={linkedIn.href} target="_blank" rel="me noreferrer">LinkedIn ↗</a></div>
   </div>
-  <div class="shell footer-inner"><p>© {year} {siteConfig.name}</p><p>Built on curiosity. Looking ahead.</p></div>
+  <div class="shell footer-inner"><p>© {year} {siteConfig.name}</p><p>Built on curiosity.</p></div>
 </footer>

@@ -1,15 +1,16 @@
 export const siteConfig = {
   name: 'Pardeep Kumar',
   shortName: 'PK',
-  title: 'Pardeep Kumar | Education Founder & Builder',
-  description: 'Building a school in India. Pardeep Kumar welcomes conversations with investors in Indian education, excellent teachers, and education partners.',
+  title: 'Pardeep Kumar | Curiosity-driven school education',
+  description:
+    'Engineer, researcher, and future education founder. Why I believe curiosity and inquiry-led learning belong to every child, not only the privileged.',
   email: 'pardeep.iitb@gmail.com',
   navigation: [
     { label: 'Home', href: '', enabled: true },
-    { label: 'Education', href: 'education/', enabled: true },
-    { label: 'About', href: 'about/', enabled: true },
-    { label: 'Ventures', href: 'web/', enabled: true },
-    { label: 'Writing', href: 'blog/', enabled: true }
+    { label: 'My story', href: 'my-story/', enabled: true },
+    { label: 'What I believe', href: 'what-i-believe/', enabled: true },
+    { label: 'Notes', href: 'notes/', enabled: true },
+    { label: 'Contact', href: 'contact/', enabled: true }
   ],
   social: [
     { label: 'Email', href: 'mailto:pardeep.iitb@gmail.com' },

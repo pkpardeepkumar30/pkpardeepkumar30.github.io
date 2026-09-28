@@ -8,14 +8,14 @@ export async function GET(context) {
   const base = import.meta.env.BASE_URL;
 
   return rss({
-    title: `${siteConfig.name} : Research notes`,
-    description: 'Notes on numerical methods, scientific computing, and research software.',
+    title: `${siteConfig.name} : Notes`,
+    description: 'Notes on curiosity, inquiry-led learning, and the research that shaped how I think about teaching.',
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.published,
-      link: `${base}blog/${post.id}/`,
+      link: `${base}notes/${post.id}/`,
       categories: post.data.tags
     })),
     customData: '<language>en</language>'

@@ -2,28 +2,42 @@
 import { Image } from 'astro:assets';
 import portrait from '../../public/images/me1.jpg';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ConnectCards from '../components/ConnectCards.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout className="home-main">
   <section class="founder-hero shell" aria-labelledby="hero-title">
     <div class="founder-intro">
-      <h1 id="hero-title">Better education.<br />Stronger futures.<br /><em>Built together.</em></h1>
-      <p class="founder-lede">I’m Pardeep Kumar. I’m building a school in India, bringing an engineer’s discipline and a lifelong curiosity about learning to education.</p>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Engineer · Researcher · Education</p>
+      <h1 id="hero-title">Curiosity is not<br /><em>a privilege.</em></h1>
+      <p class="founder-statement">
+        It is how children learn — and it should not depend on what a family can afford.
+      </p>
+      <p class="founder-lede">
+        I’m Pardeep Kumar. After more than a decade in engineering and research, I’m turning towards
+        school education, and towards inquiry-led, curiosity-driven learning that ordinary families in
+        India can actually reach.
+      </p>
+      <p class="founder-lede">
+        I trained as an aerospace engineer at IIT Bombay and have spent my working life building
+        software and doing research in India and the Netherlands. Mathematics, physics, and
+        computation were the subjects that taught me how to learn. What I keep returning to is how
+        much a single good question can change what a child understands.
+      </p>
       <div class="hero-actions">
-        <a class="button-link" href={`${base}education/`}>Explore my education focus <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="#connect">Let’s connect <span aria-hidden="true">↗</span></a>
+        <a class="button-link" href={`${base}what-i-believe/`}>What I believe about learning <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href={`${base}my-story/`}>My story <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="hero-footnote"><span class="fine-rule" aria-hidden="true"></span> Open to conversations with investors, educators &amp; partners.</div>
+      <div class="hero-footnote"><span class="fine-rule" aria-hidden="true"></span> I write here about the why. The rest takes shape in conversation.</div>
     </div>
     <figure class="founder-portrait">
       <div class="portrait-window">
-        <Image src={portrait} alt="Pardeep Kumar" widths={[480, 800, 1200]} sizes="(max-width: 800px) 90vw, 40vw" width={900} format="webp" loading="eager" fetchpriority="high" />
+        <Image src={portrait} alt="Portrait of Pardeep Kumar" widths={[480, 800, 1200]} sizes="(max-width: 800px) 90vw, 40vw" width={900} format="webp" loading="eager" fetchpriority="high" />
         <span class="portrait-index" aria-hidden="true">A NEW CHAPTER / EDUCATION</span>
       </div>
-      <figcaption><span><strong>Pardeep Kumar</strong><br />Building with purpose.</span><span class="portrait-sign" aria-hidden="true">PK</span></figcaption>
+      <figcaption><span><strong>Pardeep Kumar</strong><br />Learning how to learn.</span><span class="portrait-sign" aria-hidden="true">PK</span></figcaption>
     </figure>
   </section>
+
   <section class="background-strip" aria-label="Background at a glance">
     <div class="shell background-strip-inner">
       <p>A foundation in<br /><strong>ideas &amp; execution</strong></p>
@@ -33,39 +47,62 @@ const base = import.meta.env.BASE_URL;
       <div><strong>India ↔ Europe</strong><span>A cross-border perspective</span></div>
     </div>
   </section>
-  <section class="section-block shell chapter-grid" aria-labelledby="education-title">
-    <div class="section-label"><span>01 / THE NEXT CHAPTER</span><span class="section-line"></span></div>
+
+  <section class="section-block shell chapter-grid" aria-labelledby="belief-title">
+    <div class="section-label"><span>01 / WHY EDUCATION</span><span class="section-line"></span></div>
     <div class="chapter-copy">
-      <p class="eyebrow">Building in education</p>
-      <h2 id="education-title">A good school starts<br />with <em>good people.</em></h2>
-      <p>My focus is on building a school in India where strong teaching, curiosity, and real understanding shape the student experience.</p>
-      <p>I’m interested in meeting people who share that ambition: investors with a long-term interest in Indian education, experienced education partners, and excellent teachers who care deeply about their craft.</p>
-      <a class="text-link" href={`${base}education/`}>The thinking behind the school <span aria-hidden="true">↗</span></a>
+      <p class="eyebrow">The conviction</p>
+      <h2 id="belief-title">A good education<br />should not depend<br />on <em>an accident of birth.</em></h2>
+      <p>
+        The children who get taught to ask questions, to test an idea, to sit with something they do
+        not yet understand — they tend to be the children whose families could already afford it.
+        That is the part I find hard to accept.
+      </p>
+      <p>
+        Inquiry-led learning is not a luxury feature bolted onto schooling. It is the ordinary,
+        everyday work of helping a child learn how to learn, and it belongs to every child.
+      </p>
+      <a class="text-link" href={`${base}what-i-believe/`}>What I believe about learning <span aria-hidden="true">↗</span></a>
     </div>
     <aside class="belief-card">
       <span class="belief-symbol" aria-hidden="true">↗</span>
       <p class="eyebrow">The starting point</p>
-      <p class="belief-statement">Great teachers.<br />Curious minds.<br />Lasting possibilities.</p>
-      <p>A commitment to the people and the everyday work that make education matter.</p>
+      <p class="belief-statement">Ask the question.<br />Sit with it.<br />Find out why.</p>
+      <p>The habits that carried me through engineering and research are the same ones a ten-year-old can be taught.</p>
     </aside>
   </section>
+
   <section class="founder-background section-block" aria-labelledby="background-title">
     <div class="shell">
       <div class="section-label"><span>02 / THE PERSON BEHIND THE WORK</span><span class="section-line"></span></div>
       <div class="background-grid">
-        <div><p class="eyebrow">From engineering to education</p><h2 id="background-title">A builder’s mindset.<br /><em>A wider ambition.</em></h2><a class="text-link" href={`${base}about/`}>More about me <span aria-hidden="true">↗</span></a></div>
-        <div class="background-copy"><p>I trained in aerospace engineering at IIT Bombay and spent more than a decade working across software, engineering, and research in India and the Netherlands.</p><p>My experience includes Shell, ASM International, and doctoral research at CWI Amsterdam and TU Delft. Along the way, I’ve built scientific software and independent digital products, taking ideas through to working systems.</p><p>That experience shapes how I approach education: ask good questions, bring capable people together, and put care into execution.</p></div>
+        <div>
+          <p class="eyebrow">From engineering to education</p>
+          <h2 id="background-title">A builder’s mindset.<br /><em>A wider ambition.</em></h2>
+          <a class="text-link" href={`${base}my-story/`}>Read my story <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="background-copy">
+          <p>I trained in aerospace engineering at IIT Bombay and spent more than a decade working across software, engineering, and research in India and the Netherlands.</p>
+          <p>My experience includes Shell, ASM International, and doctoral research at CWI Amsterdam and TU Delft. Along the way, I’ve built scientific software and independent digital products, taking ideas through to working systems.</p>
+          <p>That experience shapes how I think about education: ask good questions, bring capable people together, and put care into the everyday execution.</p>
+        </div>
       </div>
       <div class="work-links">
-        <a href={`${base}web/`}><span>Product building</span><strong>Ideas made real</strong><span aria-hidden="true">↗</span></a>
-        <a href={`${base}research/`}><span>Research &amp; engineering</span><strong>A foundation in rigour</strong><span aria-hidden="true">↗</span></a>
-        <a href={`${base}blog/`}><span>Writing</span><strong>Thinking out loud</strong><span aria-hidden="true">↗</span></a>
+        <a href={`${base}what-i-believe/`}><span>Beliefs</span><strong>How children learn</strong><span aria-hidden="true">↗</span></a>
+        <a href={`${base}notes/`}><span>Notes</span><strong>Thinking out loud</strong><span aria-hidden="true">↗</span></a>
+        <a href={`${base}contact/`}><span>Contact</span><strong>Start a conversation</strong><span aria-hidden="true">↗</span></a>
       </div>
     </div>
   </section>
-  <section class="section-block shell connect-section" id="connect" aria-labelledby="connect-title">
-    <div class="section-label"><span>03 / LET’S CONNECT</span><span class="section-line"></span></div>
-    <div class="connect-heading"><h2 id="connect-title">The right conversation<br />can be <em>a beginning.</em></h2><p>I’m open to meeting people who want to invest in education in India, help build a thoughtful school, or join as exceptional teachers.</p></div>
-    <ConnectCards />
+
+  <section class="section-block shell connect-section" aria-labelledby="connect-title">
+    <div class="section-label"><span>03 / LET’S TALK</span><span class="section-line"></span></div>
+    <div class="connect-heading">
+      <h2 id="connect-title">If any of this<br />sounds <em>familiar to you.</em></h2>
+      <p>I’d like to hear from teachers, school leaders, parents, and anyone who thinks carefully about how children are taught.</p>
+    </div>
+    <div class="hero-actions">
+      <a class="button-link" href={`${base}contact/`}>Get in touch <span aria-hidden="true">↗</span></a>
+    </div>
   </section>
 </BaseLayout>
