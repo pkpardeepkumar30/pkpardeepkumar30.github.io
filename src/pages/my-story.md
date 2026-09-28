@@ -1,14 +1,13 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: My story
-description: "An engineer and researcher of more than a decade, and why school education is where I want to spend the next part of my life."
+description: "An engineer and researcher of more than a decade — and why the skills school never taught me are the ones I now care most about."
 # TODO list for Pardeep. Frontmatter is never rendered, so these stay private.
 todo:
-  - "Opening: one or two sentences about your own schooling — the kind of school, what it did or did not give you. This is the strongest available part of the 'why' and has deliberately not been invented for you."
-  - "A path across disciplines: the year you moved to the Netherlands, if you want it stated."
+  - "Verify before publishing: the claim about India's very top JEE rankers and entrepreneurship is currently written as an observation with no figure. If you want the specific number in (e.g. 'of the last twenty AIR-1s, one'), find a source you would be happy to be challenged on, because someone will check it."
+  - "Your school in Jind is described here as 'a school in a tier-3 town', because naming specific cities was on your exclude list. If you would rather name it, it is a one-word change."
   - "A path across disciplines: confirm you are happy to keep the January 2027 defence date public. It is a date about you, not about any plan, so it has been kept."
-  - "Why education: if there was a specific moment, person, or conversation that turned you towards education, a short paragraph here would carry more weight than anything else on the site."
-  - "Why education: any teaching, tutoring, or mentoring you have done, even informally. If there is none, that section can stay as it is."
+  - "What I noticed: any teaching, tutoring, or mentoring you have done, even informally. Nothing has been claimed on your behalf."
   - "Site-wide: confirm pardeep.iitb@gmail.com is the address you want publicly listed (src/site.config.ts)."
   - "Site-wide: the homepage portrait is public/images/me1.jpg. Replace it if you would like a different photo."
 ---
@@ -17,11 +16,23 @@ I trained as an engineer, spent more than ten years on hard technical problems i
 
 ## A path across disciplines and borders
 
-I trained in aerospace engineering at IIT Bombay, completing my MSc in 2014. My career began in India, building simulation and engineering software, and later took me to the Netherlands.
+I trained in aerospace engineering at IIT Bombay, completing my MSc in 2014. My career began in India, building simulation and engineering software. I moved to the Netherlands in 2019.
 
 Over more than ten years, I have worked across energy, semiconductors, engineering software, finance, and scientific research. That journey includes Fluidyn, Altair, KLA-Tencor, Aakraya Research, Shell, and ASM International.
 
-My doctoral research at CWI Amsterdam and TU Delft focused on scientific computing and numerical methods. My thesis has been submitted and approved, and the defence is scheduled for January 2027 at TU Delft. This work strengthened habits I value in any endeavour: making assumptions explicit, testing ideas carefully, and following through on difficult problems.
+After eight years as a working software professional, I began a doctorate in 2022. My research at CWI Amsterdam and TU Delft focused on scientific computing and numerical methods. My thesis has been submitted and approved, and the defence is scheduled for January 2027 at TU Delft. The work strengthened habits I value in any endeavour: making assumptions explicit, testing ideas carefully, and following through on difficult problems.
+
+## What I noticed
+
+I went to school in my village until lower middle school, and from grade 8 to a school in a tier-3 town. Both were organised around rote learning. From what I can see, much of tier-3 India is still taught the same way today.
+
+Moving to the Netherlands in 2019 made the gap plain to me. Not because children here are cleverer — they are not — but because their schools deliberately spend time on things mine never touched. Children are taught to argue a point and to be argued with. To work in a group. To stand on a stage and hold a room. To make a presentation. To take a decision and answer for it. To play a sport and lose a match without it becoming a catastrophe. To notice where another person's boundary is and stop there. To sit with their own attention. None of this is treated as an extra. It is simply part of what a school is for.
+
+My university did not address these things either, and it was only once I was working that I understood what I had missed. Technical rigour I had. The rest — communication, collaboration, the ability to ask a good research question rather than answer someone else's — I had to assemble on my own, late, and in public.
+
+A doctorate does not close that gap, which surprised me. Talking to peers across research groups, I keep finding the same absence. TU Delft does introduce soft-skills courses, engineering ethics among them, and I am glad it does. But they run fast, and they arrive when you are already thirty. What they mostly did was leave me wondering why any of it waits that long.
+
+The same thought arrives from the other direction when I look at who India's very highest exam rankers turn out to become. These are, by any measure, extraordinarily capable people. Remarkably few of them go on to build anything of their own. Whatever else that tells us, it does not look like a shortage of ability. It looks like a shortage of practice at a stage when practice is cheap.
 
 ## From ideas to execution
 
@@ -37,7 +48,7 @@ Mathematics, physics, and computation have been central to my own learning. I kn
 
 Research trains you to be comfortable not knowing. You sit with a problem, you keep asking why, you accept being wrong in public, and eventually something opens up. I have never understood why that way of working is treated as an advanced skill reserved for graduate students, rather than the ordinary way a curious ten-year-old could be taught.
 
-What I care about is that curiosity and real understanding stop being things that follow family income. [That conviction is set out in full here](../what-i-believe/).
+What I care about is that curiosity, real understanding, and the skills a person actually lives by stop being things that follow family income or postcode. [That conviction is set out in full here](../what-i-believe/).
 
 ## Beyond work
 
