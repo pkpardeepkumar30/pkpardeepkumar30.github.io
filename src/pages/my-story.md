@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: My story
-description: "An engineer and researcher of more than a decade — and why the skills school never taught me are the ones I now care most about."
+description: "An engineer and researcher of more than a decade, and why the skills school never taught me are the ones I now care most about."
 # TODO list for Pardeep. Frontmatter is never rendered, so these stay private.
 todo:
   - "Verify before publishing: the claim about India's very top JEE rankers and entrepreneurship is currently written as an observation with no figure. If you want the specific number in (e.g. 'of the last twenty AIR-1s, one'), find a source you would be happy to be challenged on, because someone will check it."
@@ -26,9 +26,9 @@ After eight years as a working software professional, I began a doctorate in 202
 
 I went to school in my village until lower middle school, and from grade 8 to a school in a tier-3 town. Both were organised around rote learning. From what I can see, much of tier-3 India is still taught the same way today.
 
-Moving to the Netherlands in 2019 made the gap plain to me. Not because children here are cleverer — they are not — but because their schools deliberately spend time on things mine never touched. Children are taught to argue a point and to be argued with. To work in a group. To stand on a stage and hold a room. To make a presentation. To take a decision and answer for it. To play a sport and lose a match without it becoming a catastrophe. To notice where another person's boundary is and stop there. To sit with their own attention. None of this is treated as an extra. It is simply part of what a school is for.
+Moving to the Netherlands in 2019 made the gap plain to me. Not because children here are cleverer. They are not. It is because their schools deliberately spend time on things mine never touched. Children are taught to argue a point and to be argued with. To work in a group. To stand on a stage and hold a room. To make a presentation. To take a decision and answer for it. To play a sport and lose a match without it becoming a catastrophe. To notice where another person's boundary is and stop there. To sit with their own attention. None of this is treated as an extra. It is simply part of what a school is for.
 
-My university did not address these things either, and it was only once I was working that I understood what I had missed. Technical rigour I had. The rest — communication, collaboration, the ability to ask a good research question rather than answer someone else's — I had to assemble on my own, late, and in public.
+My university did not address these things either, and it was only once I was working that I understood what I had missed. Technical rigour I had. The rest I had to assemble on my own, late, and in public: communication, collaboration, and the ability to ask a good research question rather than answer someone else's.
 
 A doctorate does not close that gap, which surprised me. Talking to peers across research groups, I keep finding the same absence. TU Delft does introduce soft-skills courses, engineering ethics among them, and I am glad it does. But they run fast, and they arrive when you are already thirty. What they mostly did was leave me wondering why any of it waits that long.
 

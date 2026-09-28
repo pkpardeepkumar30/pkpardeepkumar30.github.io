@@ -1,6 +1,6 @@
 ---
 title: "The question nobody asked me"
-description: "A sample note you can replace. On the difference between being told an answer and being asked a question — and why that difference decides what a child thinks they are capable of."
+description: "A sample note you can replace. On the difference between being told an answer and being asked a question, and why that difference decides what a child thinks they are capable of."
 published: 2026-09-28
 draft: false
 tags:
@@ -13,7 +13,7 @@ tags:
 
 Somewhere in every classroom there is a child who has quietly concluded that they are not a maths person. Usually they did not arrive at this by failing. They arrived at it by not understanding one thing, early, and never being asked what it was.
 
-That is the part I find worth dwelling on. The confusion is rarely mysterious. A child who cannot divide fractions almost always has a specific, nameable misunderstanding underneath it — something about what a fraction *is*, or what division *does*. It takes a few minutes of genuine curiosity from an adult to find it. What usually happens instead is another worked example, delivered faster.
+That is the part I find worth dwelling on. The confusion is rarely mysterious. A child who cannot divide fractions almost always has a specific, nameable misunderstanding underneath it: something about what a fraction *is*, or what division *does*. It takes a few minutes of genuine curiosity from an adult to find it. What usually happens instead is another worked example, delivered faster.
 
 ## Being told versus being asked
 
