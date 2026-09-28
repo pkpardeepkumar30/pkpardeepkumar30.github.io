@@ -2,6 +2,7 @@
 title: "From four equilibrium equations to one: faster pure-CO₂ depressurization"
 description: "How the saturation curve reduces the pure-component UV flash, how differentiating the constraint yields a temperature ODE, and where the efficiency–conservation trade-off appears."
 published: 2026-07-18T09:00:00+02:00
+category: research
 draft: false
 tags:
   - phase equilibrium

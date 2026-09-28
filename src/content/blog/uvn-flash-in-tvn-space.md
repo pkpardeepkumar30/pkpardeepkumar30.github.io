@@ -2,6 +2,7 @@
 title: "Solving the multicomponent UVN flash in TVN space"
 description: "A step-by-step account of stability analysis, entropy maximization, the λ = −1/T result, the Helmholtz Q-function, and why eliminating nested temperature solves matters."
 published: 2026-07-18T10:00:00+02:00
+category: research
 draft: false
 tags:
   - UVN flash

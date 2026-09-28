@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: My story
-description: "An engineer and researcher of more than a decade — and why the skills school never taught me are the ones I now care most about."
+description: "An engineer and researcher of more than a decade, and why the skills school never taught me are the ones I now care most about."
 # TODO list for Pardeep. Frontmatter is never rendered, so these stay private.
 todo:
   - "Verify before publishing: the claim about India's very top JEE rankers and entrepreneurship is currently written as an observation with no figure. If you want the specific number in (e.g. 'of the last twenty AIR-1s, one'), find a source you would be happy to be challenged on, because someone will check it."
@@ -24,15 +24,15 @@ After eight years as a working software professional, I began a doctorate in 202
 
 ## What I noticed
 
-I went to school in my village until lower middle school, and from grade 8 to a school in a tier-3 town. Both were organised around rote learning. From what I can see, much of tier-3 India is still taught the same way today.
+I went to school in my village until lower middle school, and from grade 8 to a school in a tier-3 town. Both were organised around rote learning. When I talk to people from towns like it today, I do not hear that a great deal has changed, though I can only speak to what I have seen myself and been told.
 
-Moving to the Netherlands in 2019 made the gap plain to me. Not because children here are cleverer — they are not — but because their schools deliberately spend time on things mine never touched. Children are taught to argue a point and to be argued with. To work in a group. To stand on a stage and hold a room. To make a presentation. To take a decision and answer for it. To play a sport and lose a match without it becoming a catastrophe. To notice where another person's boundary is and stop there. To sit with their own attention. None of this is treated as an extra. It is simply part of what a school is for.
+Moving to the Netherlands in 2019 gave me something to compare my own schooling against. I want to be careful about what I am claiming here. This is one person's observation over several years rather than a study, and it is certainly not a claim that children here are cleverer. What I notice is that their schools deliberately spend time on things mine never touched. Children are taught to argue a point and to be argued with. To work in a group. To stand on a stage and hold a room. To make a presentation. To take a decision and answer for it. To play a sport and lose a match without it becoming a catastrophe. To notice where another person's boundary is and stop there. To sit with their own attention. As far as I can see, none of this is treated as an extra. It is simply part of what a school is for.
 
-My university did not address these things either, and it was only once I was working that I understood what I had missed. Technical rigour I had. The rest — communication, collaboration, the ability to ask a good research question rather than answer someone else's — I had to assemble on my own, late, and in public.
+My university did not address these things either, and it was only once I was working that I understood what I had missed. Technical rigour I had. The rest I had to assemble on my own, late, and in public: communication, collaboration, and the ability to ask a good research question rather than answer someone else's.
 
-A doctorate does not close that gap, which surprised me. Talking to peers across research groups, I keep finding the same absence. TU Delft does introduce soft-skills courses, engineering ethics among them, and I am glad it does. But they run fast, and they arrive when you are already thirty. What they mostly did was leave me wondering why any of it waits that long.
+A doctorate does not close that gap, which surprised me. In my own conversations with peers across research groups, the same absence keeps coming up. TU Delft does introduce soft-skills courses, engineering ethics among them, and I am glad it does. But they run fast, and they arrive when you are already thirty. What they mostly did was leave me wondering why any of it waits that long.
 
-The same thought arrives from the other direction when I look at who India's very highest exam rankers turn out to become. These are, by any measure, extraordinarily capable people. Remarkably few of them go on to build anything of their own. Whatever else that tells us, it does not look like a shortage of ability. It looks like a shortage of practice at a stage when practice is cheap.
+A related thought arrives from the other direction. Out of curiosity I have followed where India's very highest exam rankers end up, and what struck me is how few of them go on to build something of their own. I have not studied this properly and I would not want to lean on it too hard. But these are, by any measure, extraordinarily capable people, and what I think I am looking at is not a shortage of ability. It looks more like a shortage of practice, at an age when practice is cheap.
 
 ## From ideas to execution
 

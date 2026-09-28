@@ -2,6 +2,7 @@
 title: "From Einstein’s equations to BSSN and FO-CCZ4"
 description: "Why the covariant field equations are not yet a time-marching algorithm, and how ADM, BSSN, CCZ4, and FO-CCZ4 reorganize spacetime geometry into numerical evolution systems."
 published: 2026-07-18T12:00:00+02:00
+category: research
 draft: false
 tags:
   - numerical relativity
