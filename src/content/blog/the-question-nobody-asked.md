@@ -1,6 +1,6 @@
 ---
 title: "The question nobody asked me"
-description: "A sample note you can replace. On the difference between being told an answer and being asked a question, and why that difference decides what a child thinks they are capable of."
+description: "On the difference between being told an answer and being asked a question, and why that difference decides what a child thinks they are capable of."
 published: 2026-09-28
 draft: false
 tags:
