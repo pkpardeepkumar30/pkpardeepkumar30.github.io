@@ -2,6 +2,7 @@
 title: "A unified model for two-phase transport of CO₂-rich mixtures"
 description: "How HEM, a Helmholtz-energy EOS, stability analysis, a reformulated UVN flash, and equilibrium sound speed combine in multicomponent pipeline simulations."
 published: 2026-07-18T11:00:00+02:00
+category: research
 draft: false
 tags:
   - multicomponent flow

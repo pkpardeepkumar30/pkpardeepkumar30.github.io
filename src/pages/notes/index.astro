@@ -10,11 +10,25 @@ const dateFormatter = new Intl.DateTimeFormat('en-GB', {
   month: 'long',
   year: 'numeric'
 });
+
+const groups = [
+  {
+    id: 'education',
+    label: 'Education',
+    blurb: 'On curiosity, inquiry, and how children are taught.'
+  },
+  {
+    id: 'research',
+    label: 'Research & engineering',
+    blurb: 'Longer notes from the work that shaped how I think about learning.'
+  }
+].map((group) => ({ ...group, posts: posts.filter((post) => post.data.category === group.id) }))
+  .filter((group) => group.posts.length > 0);
 ---
 
 <BaseLayout
   title="Notes"
-  description="Notes by Pardeep Kumar on curiosity, inquiry-led learning, and the research and engineering work that shaped how he thinks about teaching."
+  description="Notes by Pardeep Kumar on curiosity and inquiry-led learning, alongside longer pieces from his research and engineering work."
   className="page-main"
 >
   <div class="shell">
@@ -27,27 +41,44 @@ const dateFormatter = new Intl.DateTimeFormat('en-GB', {
       </p>
     </header>
 
-    {posts.length > 0 ? (
-      <ol class="post-list">
-        {posts.map((post) => (
-          <li>
-            <article>
-              <p class="post-meta">
-                <time datetime={post.data.published.toISOString()}>
-                  {dateFormatter.format(post.data.published)}
-                </time>
-              </p>
-              <h2><a href={`${base}notes/${post.id}/`}>{post.data.title}</a></h2>
-              <p>{post.data.description}</p>
-              {post.data.tags.length > 0 && (
-                <ul class="tag-list" aria-label="Tags">
-                  {post.data.tags.map((tag) => <li>{tag}</li>)}
-                </ul>
-              )}
-            </article>
-          </li>
+    {groups.length > 1 && (
+      <nav class="note-categories" aria-label="Note categories">
+        <span>Browse by</span>
+        {groups.map((group) => (
+          <a href={`#${group.id}`}>{group.label} <span class="note-count">{group.posts.length}</span></a>
         ))}
-      </ol>
+      </nav>
+    )}
+
+    {groups.length > 0 ? (
+      groups.map((group) => (
+        <section class="note-group" id={group.id} aria-labelledby={`${group.id}-heading`}>
+          <div class="note-group-heading">
+            <h2 id={`${group.id}-heading`}>{group.label}</h2>
+            <p>{group.blurb}</p>
+          </div>
+          <ol class="post-list">
+            {group.posts.map((post) => (
+              <li>
+                <article>
+                  <p class="post-meta">
+                    <time datetime={post.data.published.toISOString()}>
+                      {dateFormatter.format(post.data.published)}
+                    </time>
+                  </p>
+                  <h3><a href={`${base}notes/${post.id}/`}>{post.data.title}</a></h3>
+                  <p>{post.data.description}</p>
+                  {post.data.tags.length > 0 && (
+                    <ul class="tag-list" aria-label="Tags">
+                      {post.data.tags.map((tag) => <li>{tag}</li>)}
+                    </ul>
+                  )}
+                </article>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))
     ) : (
       <div class="empty-state">
         <h2>Notes are coming soon.</h2>

@@ -2,6 +2,7 @@
 title: "The question nobody asked me"
 description: "On the difference between being told an answer and being asked a question, and why that difference decides what a child thinks they are capable of."
 published: 2026-09-28
+category: education
 draft: false
 tags:
   - curiosity
@@ -32,8 +33,8 @@ The uncomfortable part is that this style of teaching is mostly available to chi
 
 I do not think that is a law of nature. It is a design problem, and design problems have the useful property of being solvable by people who take them seriously.
 
-## What I would like to get wrong in public
+## Where your experience comes in
 
-I am an engineer and a researcher, not a teacher. Everything above is a conviction formed from the outside, which is exactly the kind of conviction that deserves to meet someone with twenty years in a classroom.
+I come to this as an engineer and a researcher rather than a teacher, and what is written above is a view formed from outside the classroom. Anyone who has spent twenty years inside one knows things about it that I do not.
 
-If that is you, I would like to hear which part of this you would push back on first.
+If that is you, I would like to hear how this matches what you have seen.

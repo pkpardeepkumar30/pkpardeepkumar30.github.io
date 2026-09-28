@@ -2,6 +2,7 @@
 title: "Why CO₂ pipeline transport is a thermodynamics problem"
 description: "From CCS infrastructure and phase envelopes to Riemann waves, water hammer, and a proposed CO₂-hammer benchmark: an accessible map of the modelling problem."
 published: 2026-07-18T08:00:00+02:00
+category: research
 draft: false
 tags:
   - carbon capture and storage
